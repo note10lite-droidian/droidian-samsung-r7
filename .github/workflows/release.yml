@@ -93,6 +93,9 @@ jobs:
       upload_url: ${{ steps.create_release.outputs.upload_url }}${{ steps.create_nightly.outputs.upload_url }}
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Free up some storage
         uses: jlumbroso/free-disk-space@main
         with:
@@ -103,21 +106,14 @@ jobs:
           large-packages: true
           swap-storage: true
 
-      - name: Delete old nightly release
-        uses: dev-drprasad/delete-tag-and-release@v1.1
-        if: startsWith(github.ref, 'refs/tags/droidian') != true
-        with:
-          delete_release: true # default: false
-          tag_name: nightly # tag name to delete
+      - name: Nightly tag
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Tag snapshot
         if: startsWith(github.ref, 'refs/tags/droidian') != true
-        uses: tvdias/github-tagger@v0.0.1
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          tag: nightly
+        run: |
+          gh release delete nightly --yes | true
+          git push --delete origin refs/tags/nightly || true
+          gh release create nightly
 
       - name: Download artifacts
         uses: actions/download-artifact@v4
