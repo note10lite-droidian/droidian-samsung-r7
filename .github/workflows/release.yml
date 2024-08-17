@@ -43,7 +43,7 @@ jobs:
 
       - name: Set nightly version
         if: startsWith(github.ref, 'refs/tags/droidian') != true
-        run: echo "DROIDIAN_VERSION=nightly" >> $GITHUB_ENV
+        run: echo "DROIDIAN_VERSION=next" >> $GITHUB_ENV
 
       - name: Set version
         if: startsWith(github.ref, 'refs/tags/droidian') == true
