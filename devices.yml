@@ -7,6 +7,10 @@
     - droidian-devtools
     - adaptation-hybris-devtools
 
+.adaptation_generic_packages:
+  packages: &adaptation_generic_packages
+    - adaptation-android-generic
+
 .fxtec_pro1_packages:
   packages: &fxtec_pro1_packages
     - adaptation-fxtec-pro1
@@ -52,6 +56,8 @@ rootfs:
   edition: phosh
   variant: phone
   apilevel: [28, 29, 30, 32, 33]
+
+  packages: *adaptation_generic_packages
 
   bundles:
     # Developer tools bundle
