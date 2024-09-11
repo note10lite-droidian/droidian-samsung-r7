@@ -158,35 +158,37 @@ def generate_recipe_for_product(contents, product, arch, edition, variant, apile
 	with open(os.path.join(BUILDER_GENERATED_DIRECTORY, "product.yaml"), "w") as f:
 		f.write(TEMPLATE % template_config)
 
-		if config["type"] == "rootfs" and config.get("bundles", []):
-			for bundle in config["bundles"]:
-				write_end = False
-				if bundle["arch"] in ("any", arch) and bundle.get("apilevel", 28) in ("any", int(apilevel)):
-					if bundle.get("only_stable", False):
-						f.write(TEMPLATE_ONLY_STABLE)
-						write_end = True
-					elif bundle.get("only_nightly", False):
-						f.write(TEMPLATE_ONLY_NIGHTLY)
-						write_end = True
+		if config["type"] == "rootfs":
+			if config.get("bundles", []):
+				for bundle in config["bundles"]:
+					write_end = False
+					if bundle["arch"] in ("any", arch) and bundle.get("apilevel", 28) in ("any", int(apilevel)):
+						if bundle.get("only_stable", False):
+							f.write(TEMPLATE_ONLY_STABLE)
+							write_end = True
+						elif bundle.get("only_nightly", False):
+							f.write(TEMPLATE_ONLY_NIGHTLY)
+							write_end = True
 
-					f.write(
-						TEMPLATE_BUNDLE % {
-							"name" : bundle["name"],
-							"architecture" : arch,
-							"packages" : " ".join(bundle["packages"]),
-							"apilevel" : int(apilevel),
-						}
-					)
+						f.write(
+							TEMPLATE_BUNDLE % {
+								"name" : bundle["name"],
+								"architecture" : arch,
+								"packages" : " ".join(bundle["packages"]),
+								"apilevel" : int(apilevel),
+							}
+						)
 
-					if write_end:
-						f.write(TEMPLATE_END)
-		elif config["type"] == "rootfs" and config.get("packages", []):
-			f.write(
-				TEMPLATE_IMAGE_ADAPTATION % {
-					"architecture" : arch,
-					"packages" : " ".join(config["packages"])
-				}
-			)
+						if write_end:
+							f.write(TEMPLATE_END)
+
+			if config.get("packages", []):
+				f.write(
+					TEMPLATE_IMAGE_ADAPTATION % {
+						"architecture" : arch,
+						"packages" : " ".join(config["packages"])
+					}
+				)
 		elif config["type"] == "image":
 			f.write(
 				TEMPLATE_IMAGE_ADAPTATION % {
