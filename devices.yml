@@ -82,6 +82,7 @@ fxtec_pro1:
   edition: phosh
   variant: phone
   apilevel: 28
+  droidian_variant: fxtec
 
   packages: *fxtec_pro1_packages
 
@@ -92,6 +93,7 @@ fxtec_pro1x:
   edition: phosh
   variant: phone
   apilevel: 30
+  droidian_variant: fxtec
 
   packages: *fxtec_pro1x_packages
 
