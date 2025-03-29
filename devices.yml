@@ -125,7 +125,7 @@ google_sargo:
 lenovo_bronco:
   type: image
   arch: arm64
-  edition: phosh
+  edition: [phosh, plamo_wf_experimental]
   variant: phone
   apilevel: 32
 
