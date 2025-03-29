@@ -153,7 +153,7 @@ def generate_recipe_for_product(contents, product, arch, edition, variant, apile
 		"apilevel" : int(apilevel),
 		"mtype" : "OFFICIAL" if not IS_COMMUNITY_PORT else "UNOFFICIAL",
 		"version" : os.environ.get("DROIDIAN_VERSION", "next"),
-		"droidian_variant" : "_%s" % droidian_variant if droidian_variant else "",
+		"droidian_variant" : "-%s" % droidian_variant if droidian_variant else "",
 		"suffix" : datetime.datetime.utcnow().strftime("%Y%m%d"),
 		"output_type" : config["type"],
 		"use_internal_repository" : "yes" if config.get("use_internal_repository", False) else "no",
