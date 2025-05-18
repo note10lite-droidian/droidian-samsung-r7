@@ -39,8 +39,8 @@
 
 .volla_mimameid_packages:
   packages: &volla_mimameid_packages
-    - adaptation-volla-mimameid
-    - adaptation-volla-mimameid-configs
+    - adaptation-volla-mimameid-h12
+    - adaptation-volla-mimameid-h12-configs
 
 .volla_mimir_packages:
   packages: &volla_mimir_packages
@@ -167,11 +167,11 @@ volla_yggdrasil:
 
 # Volla Phone 22 (mimameid)
 volla_mimameid:
-  type: rootfs
+  type: image
   arch: arm64
   edition: phosh
   variant: phone
-  apilevel: 30
+  apilevel: 32
 
   packages: *volla_mimameid_packages
 
