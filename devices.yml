@@ -48,6 +48,11 @@
     - adaptation-volla-mimir-configs
     - adaptation-volla-mimir-configs-luks-encryption
 
+.volla_vidofnir_packages:
+  packages: &volla_vidofnir_packages
+    - adaptation-volla-vidofnir
+    - adaptation-volla-vidofnir-configs
+
 .volla_yggdrasil_packages:
   packages: &volla_yggdrasil_packages
     - adaptation-volla-yggdrasil
@@ -189,6 +194,16 @@ volla_mimameid:
   apilevel: 32
 
   packages: *volla_mimameid_packages
+
+# Volla Phone X23 (vidofnir)
+volla_vidofnir:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 32
+
+  packages: *volla_vidofnir_packages
 
 # Volla Tablet (mimir)
 #
