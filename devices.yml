@@ -53,6 +53,11 @@
     - adaptation-volla-yggdrasil
     - adaptation-volla-yggdrasil-configs
 
+.volla_yggdrasilx_packages:
+  packages: &volla_yggdrasilx_packages
+    - adaptation-volla-yggdrasilx
+    - adaptation-volla-yggdrasilx-configs
+
 .xiaomi_miatoll_packages:
   packages: &xiaomi_miatoll_packages
     - adaptation-xiaomi-miatoll
@@ -164,6 +169,16 @@ volla_yggdrasil:
   apilevel: 28
 
   packages: *volla_yggdrasil_packages
+
+# Volla Phone X (yggdrasilx)
+volla_yggdrasilx:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 29
+
+  packages: *volla_yggdrasilx_packages
 
 # Volla Phone 22 (mimameid)
 volla_mimameid:
