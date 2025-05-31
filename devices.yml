@@ -37,6 +37,11 @@
     - adaptation-sony-bahamut
     - adaptation-sony-bahamut-configs
 
+.volla_algiz_packages:
+  packages: &volla_algiz_packages
+    - adaptation-volla-algiz
+    - adaptation-volla-algiz-configs
+
 .volla_mimameid_packages:
   packages: &volla_mimameid_packages
     - adaptation-volla-mimameid-h12
@@ -204,6 +209,16 @@ volla_vidofnir:
   apilevel: 32
 
   packages: *volla_vidofnir_packages
+
+# Volla Phone Quintus (algiz)
+volla_algiz:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 33
+
+  packages: *volla_algiz_packages
 
 # Volla Tablet (mimir)
 #
