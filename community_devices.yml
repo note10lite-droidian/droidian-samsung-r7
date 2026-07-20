@@ -1,0 +1,14 @@
+# This file has been generated automatically by droidian-new-device
+
+# samsung r7
+samsung_r7:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 33
+  use_internal_repository: true
+
+  packages:
+    - adaptation-samsung-r7
+    - adaptation-samsung-r7-configs
