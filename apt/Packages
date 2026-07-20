@@ -1,0 +1,34 @@
+Package: adaptation-samsung-r7
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm
+Architecture: arm64
+Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
+Installed-Size: 9
+Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm)
+Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm_arm64.deb
+Size: 2216
+MD5sum: f1ee39b8aa362078a8ee76eeff9fd719
+SHA1: c32e3d158de18604ba5fc57eb1aaf2cc4837d801
+SHA256: d1ed20fcd4c1297bb1b81f917d562e5932368c707a4b69dcc70eec5e313c7100
+Section: metapackages
+Priority: optional
+Description: Community adaptation for samsung-r7 - metapackage
+X-Droidian-Vcs-Revision: c4c06d0fe5641ad08752294d51502863552085a7
+X-Droidian-Vcs-Url: https://github.com/droidian-devices/adaptation-samsung-r7.git
+
+Package: adaptation-samsung-r7-configs
+Source: adaptation-samsung-r7
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm
+Architecture: arm64
+Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
+Installed-Size: 31
+Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm_arm64.deb
+Size: 4064
+MD5sum: ae3022cb7dd1b346f47805f97bd6c698
+SHA1: 5e81ea30b23482b7f50dfdfc02aaa843886bffac
+SHA256: d9eab01609cd17daf15c5559c4ce3634f87401496983e7d3f44e4d568b45d3b4
+Section: metapackages
+Priority: optional
+Description: Community adaptation for samsung-r7 - adaptation configurations
+X-Droidian-Vcs-Revision: c4c06d0fe5641ad08752294d51502863552085a7
+X-Droidian-Vcs-Url: https://github.com/droidian-devices/adaptation-samsung-r7.git
+
