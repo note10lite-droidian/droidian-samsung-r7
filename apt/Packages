@@ -121,17 +121,17 @@ Description: Phosh and related settings for mobile - common files
 
 Package: linux-bootimage-4.9.191-samsung-r7
 Source: linux-android-samsung-r7
-Version: 0.0.0+git20260727122303.0a5854c.droidian
+Version: 0.0.0+git20260727123916.a1d5b67.droidian
 Architecture: arm64
 Maintainer: Droidian porters <info@droidian.org>
 Installed-Size: 112791
 Pre-Depends: flash-bootimage (>= 4)
-Depends: linux-image-4.9.191-samsung-r7 (= 0.0.0+git20260727122303.0a5854c.droidian)
-Filename: ./linux-bootimage-4.9.191-samsung-r7_0.0.0+git20260727122303.0a5854c.droidian_arm64.deb
-Size: 48934176
-MD5sum: 40ddfe9b987b7c04e1d03fac14859d0b
-SHA1: 31c1ef61ffac4a07a3a0c9c215a9607efc28ce12
-SHA256: 734a6d4d82dd7d450c917edb49c06467915ac0b220a515cc43c7fab63a6b1d60
+Depends: linux-image-4.9.191-samsung-r7 (= 0.0.0+git20260727123916.a1d5b67.droidian)
+Filename: ./linux-bootimage-4.9.191-samsung-r7_0.0.0+git20260727123916.a1d5b67.droidian_arm64.deb
+Size: 48928924
+MD5sum: fa6feee5a0efee2572d829c4d6d660ba
+SHA1: 8fb170fb62e68a16331cca3e77a754bce2d12fa3
+SHA256: 15d50ff60bc140e588bd4af4edeb34d047974930a5eb3c8b40dfc7ffa4ddd7a8
 Section: kernel
 Priority: optional
 Description: Linux kernel for Samsung Galaxy Note10 Lite - Android Boot Image
@@ -139,77 +139,77 @@ Description: Linux kernel for Samsung Galaxy Note10 Lite - Android Boot Image
  .
  Note: This package ships an Android Boot Image bundled with Halium's
  initramfs.
-X-Droidian-Vcs-Revision: 0a5854c7778e173c3983f29568d0281050f3bd73
+X-Droidian-Vcs-Revision: a1d5b6785b93c325e1be06797cc54dc7063b989f
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
 
 Package: linux-bootimage-samsung-r7
 Source: linux-android-samsung-r7
-Version: 0.0.0+git20260727122303.0a5854c.droidian
+Version: 0.0.0+git20260727123916.a1d5b67.droidian
 Architecture: arm64
 Maintainer: Droidian porters <info@droidian.org>
 Installed-Size: 7
-Depends: linux-bootimage-4.9.191-samsung-r7 (= 0.0.0+git20260727122303.0a5854c.droidian)
-Filename: ./linux-bootimage-samsung-r7_0.0.0+git20260727122303.0a5854c.droidian_arm64.deb
-Size: 1368
-MD5sum: 430ef61eec1e3602adf7cf09ecab3869
-SHA1: 9fdd85b048923096a3d0c1dd40c64a695cf8b96b
-SHA256: 037babb3ea0aa3f1c89808899a0dbd6609833729b60ed23ea7301eb6fc2f6f4b
+Depends: linux-bootimage-4.9.191-samsung-r7 (= 0.0.0+git20260727123916.a1d5b67.droidian)
+Filename: ./linux-bootimage-samsung-r7_0.0.0+git20260727123916.a1d5b67.droidian_arm64.deb
+Size: 1376
+MD5sum: ab8d9cefb42b1ffb69c2aa6e4f977b29
+SHA1: 4f3b36f7ef2dfb6c4344edf5a2017445fb6bb89a
+SHA256: beee61307302cc185ce00bb62fb9fcdade40ddb1c44dcee4e801d418f11b4936
 Section: kernel
 Priority: optional
 Description: Linux kernel for Samsung Galaxy Note10 Lite - Android Boot Image  (latest)
  This package depends to the latest kernel bootimage available for the Samsung Galaxy Note10 Lite.
-X-Droidian-Vcs-Revision: 0a5854c7778e173c3983f29568d0281050f3bd73
+X-Droidian-Vcs-Revision: a1d5b6785b93c325e1be06797cc54dc7063b989f
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
 
 Package: linux-headers-4.9.191-samsung-r7
 Source: linux-android-samsung-r7
-Version: 0.0.0+git20260727122303.0a5854c.droidian
+Version: 0.0.0+git20260727123916.a1d5b67.droidian
 Architecture: arm64
 Maintainer: Droidian porters <info@droidian.org>
 Installed-Size: 55379
-Depends: linux-image-4.9.191-samsung-r7 (= 0.0.0+git20260727122303.0a5854c.droidian)
-Filename: ./linux-headers-4.9.191-samsung-r7_0.0.0+git20260727122303.0a5854c.droidian_arm64.deb
-Size: 8306204
-MD5sum: e82aed38fd8d3583611fb480acc2187c
-SHA1: 5216b8cf227ce212006f21a81f495cbe208a6a18
-SHA256: 721e4db407a6bc5d016b7c000526c30ac39f953d329009a7366ab9619d402459
+Depends: linux-image-4.9.191-samsung-r7 (= 0.0.0+git20260727123916.a1d5b67.droidian)
+Filename: ./linux-headers-4.9.191-samsung-r7_0.0.0+git20260727123916.a1d5b67.droidian_arm64.deb
+Size: 8312932
+MD5sum: e5f00fe2871fe9bc4156273a2377aa53
+SHA1: d00175c1507666b32657f3ea2801969106013617
+SHA256: f8202d679aa033da78ceb8b3a4bf686568e0fee09f64a008dc49e9d6f3e84881
 Section: kernel
 Priority: optional
 Description: Linux kernel for Samsung Galaxy Note10 Lite - Headers
  This package contains the Linux kernel headers for the Samsung Galaxy Note10 Lite device.
-X-Droidian-Vcs-Revision: 0a5854c7778e173c3983f29568d0281050f3bd73
+X-Droidian-Vcs-Revision: a1d5b6785b93c325e1be06797cc54dc7063b989f
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
 
 Package: linux-headers-samsung-r7
 Source: linux-android-samsung-r7
-Version: 0.0.0+git20260727122303.0a5854c.droidian
+Version: 0.0.0+git20260727123916.a1d5b67.droidian
 Architecture: arm64
 Maintainer: Droidian porters <info@droidian.org>
 Installed-Size: 7
-Depends: linux-headers-4.9.191-samsung-r7 (= 0.0.0+git20260727122303.0a5854c.droidian)
-Filename: ./linux-headers-samsung-r7_0.0.0+git20260727122303.0a5854c.droidian_arm64.deb
-Size: 1352
-MD5sum: 60f1fa05a039feb051e6486f15caa2c4
-SHA1: 8bbf255f06cf05b2a82171ed2958bcc9cf13c0d4
-SHA256: d80312b45e792ec56866a4ac664feb5c7f1c518a8e89acf88b2673fa12cf5372
+Depends: linux-headers-4.9.191-samsung-r7 (= 0.0.0+git20260727123916.a1d5b67.droidian)
+Filename: ./linux-headers-samsung-r7_0.0.0+git20260727123916.a1d5b67.droidian_arm64.deb
+Size: 1360
+MD5sum: 3048897e18f7e01295d92b5bf8ece398
+SHA1: e603ed13e2b40516fa5905e6a31e15c64c489c79
+SHA256: d11dc1c5d55248ef1013f3a13e4db898a7760c42315404e899408949330a01d8
 Section: kernel
 Priority: optional
 Description: Linux kernel for Samsung Galaxy Note10 Lite - Headers (latest)
  This package depends to the latest kernel headers available for the Samsung Galaxy Note10 Lite.
-X-Droidian-Vcs-Revision: 0a5854c7778e173c3983f29568d0281050f3bd73
+X-Droidian-Vcs-Revision: a1d5b6785b93c325e1be06797cc54dc7063b989f
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
 
 Package: linux-image-4.9.191-samsung-r7
 Source: linux-android-samsung-r7
-Version: 0.0.0+git20260727122303.0a5854c.droidian
+Version: 0.0.0+git20260727123916.a1d5b67.droidian
 Architecture: arm64
 Maintainer: Droidian porters <info@droidian.org>
 Installed-Size: 39251
-Filename: ./linux-image-4.9.191-samsung-r7_0.0.0+git20260727122303.0a5854c.droidian_arm64.deb
-Size: 9357156
-MD5sum: 78033e941635c73a45215b21c4f9cc91
-SHA1: 6bcc0f930142c64867f35fd21a85c513c524063c
-SHA256: 1544951ba1f401619d8c8202fdd44d3584e2ccbe13985e4eb792ec3502a858ac
+Filename: ./linux-image-4.9.191-samsung-r7_0.0.0+git20260727123916.a1d5b67.droidian_arm64.deb
+Size: 9343088
+MD5sum: 28613d8782485e78b0aa896d1f24fcd2
+SHA1: 36c928b5d17895e872b92db139670499e752a5cd
+SHA256: 9c3d4baf2b73ec6552037ead56d896b4fbaeff1b098b8caa994f50e6b15914e8
 Section: kernel
 Priority: optional
 Description: Linux kernel for Samsung Galaxy Note10 Lite
@@ -218,26 +218,26 @@ Description: Linux kernel for Samsung Galaxy Note10 Lite
  Note: This package only ships the kernel image and modules, you should probably
  look at the linux-bootimage-4.9.191-samsung-r7 package for a bootimage suitable
  for Android boot loaders.
-X-Droidian-Vcs-Revision: 0a5854c7778e173c3983f29568d0281050f3bd73
+X-Droidian-Vcs-Revision: a1d5b6785b93c325e1be06797cc54dc7063b989f
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
 
 Package: linux-image-samsung-r7
 Source: linux-android-samsung-r7
-Version: 0.0.0+git20260727122303.0a5854c.droidian
+Version: 0.0.0+git20260727123916.a1d5b67.droidian
 Architecture: arm64
 Maintainer: Droidian porters <info@droidian.org>
 Installed-Size: 7
-Depends: linux-image-4.9.191-samsung-r7 (= 0.0.0+git20260727122303.0a5854c.droidian)
-Filename: ./linux-image-samsung-r7_0.0.0+git20260727122303.0a5854c.droidian_arm64.deb
-Size: 1344
-MD5sum: ab71f22acaed9ba51106743b51c64477
-SHA1: 297d955d5bf61f52f40dfd65f1405930975ce487
-SHA256: e72a7b63887e7559d5f5e711c416e5011677200cb02871941c37a2d820620acc
+Depends: linux-image-4.9.191-samsung-r7 (= 0.0.0+git20260727123916.a1d5b67.droidian)
+Filename: ./linux-image-samsung-r7_0.0.0+git20260727123916.a1d5b67.droidian_arm64.deb
+Size: 1352
+MD5sum: ec9db0918af670bafa453cc338e580c3
+SHA1: e0aeb428ecb0da7407ae72d290758770d45e623b
+SHA256: 3bed46942a694103708e40a198f98b1b34a2fe90947808a16bba6b7e5ead2bc0
 Section: kernel
 Priority: optional
 Description: Linux kernel for Samsung Galaxy Note10 Lite (latest)
  This package depends to the latest kernel image available for the Samsung Galaxy Note10 Lite.
-X-Droidian-Vcs-Revision: 0a5854c7778e173c3983f29568d0281050f3bd73
+X-Droidian-Vcs-Revision: a1d5b6785b93c325e1be06797cc54dc7063b989f
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
 
 Package: phosh
