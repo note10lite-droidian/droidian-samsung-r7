@@ -32,3 +32,302 @@ Description: Community adaptation for samsung-r7 - adaptation configurations
 X-Droidian-Vcs-Revision: c4c06d0fe5641ad08752294d51502863552085a7
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/adaptation-samsung-r7.git
 
+Package: droidian-camera
+Version: 16+z1.1+git20240608103441.a0b51cd.next.production+r7rot8
+Architecture: arm64
+Maintainer: Erik Inkinen <erik.inkinen@gmail.com>
+            Bardia Moshiri <fakeshell@bardia.tech>
+            Alexander Rutz <alex@familyrutz.com>
+Installed-Size: 349
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.12.0), libgstreamer1.0-0 (>= 1.0.0), libqt5core5t64 (>= 5.15.1), libqt5gui5t64 (>= 5.2.0) | libqt5gui5-gles (>= 5.2.0), libqt5multimedia5 (>= 5.15.1), libqt5qml5 (>= 5.1.0), libstdc++6 (>= 13.1), qml-module-qtmultimedia, qml-module-qtsensors, libqt5multimedia5-plugins, qml-module-qtquick2, qml-module-qtquick-controls2, qml-module-qtquick-window2, qt5-cameraplugin-aal, qml-module-qt-labs-platform, qml-module-qt-labs-folderlistmodel, qml-module-qt-labs-settings, qml-module-qtquick-layouts, qml-module-qtgraphicaleffects, libqt5svg5, gstreamer1.0-droid, gstreamer1.0-plugins-good, gstreamer1.0-plugins-base
+Conflicts: pinhole
+Provides: pinhole
+Filename: ./droidian-camera_16+z1.1+git20240608103441.a0b51cd.next.production+r7rot8_arm64.deb
+Size: 171592
+MD5sum: 50a3532cc0e66b5277e9770300194f6e
+SHA1: 02eaa2e96867fe42ac72c2d3b007aa34a614add0
+SHA256: 20ce79ce0b74479d78fabe9a078371d226005620e36dce92d4b9986d59b4fbc6
+Section: libs
+Priority: optional
+Multi-Arch: foreign
+Description: This package contains Droidian's default camera app.
+
+Package: libphosh-0.45-0
+Source: phosh
+Version: 0.55.0+r7clock1
+Architecture: arm64
+Maintainer: Guido Günther <agx@sigxcpu.org>
+Installed-Size: 2309
+Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.39), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libdroid-0-1 (>= 0.2.0), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), phosh-common (>= 0.45.0)
+Filename: ./libphosh-0.45-0_0.55.0+r7clock1_arm64.deb
+Size: 574068
+MD5sum: a88cf26a82954936746317602e1fcfdc
+SHA1: 2fcb3cd92950603a5eaaa01f1cc8260e181685a4
+SHA256: 86253d20ac31a0ecef4d674bfe64013cd826b593da8e1b1fcd7222e316df0edc
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://phosh.mobi/
+Description: Pure Wayland shell for mobile devices - binding shared library
+ Phosh is a graphical shell for Wayland compositors speaking the layer-surface
+ protocol and aimed at mobile devices like smart phones and tablets using touch
+ based inputs and small screens.
+ .
+ This package contains the shared library for language bindings.
+
+Package: libpms-1.0-0
+Source: phosh-mobile-settings
+Version: 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2
+Architecture: arm64
+Maintainer: Guido Günther <agx@sigxcpu.org>
+Installed-Size: 170
+Depends: libpms-1.0-common (>= 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2), phosh-osk-stevia (>= 0.53~), libadwaita-1-0 (>= 1.5), libc6 (>= 2.17), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.80.0), libgnome-desktop-4-2t64 (>= 3.33.4), libgtk-4-1 (>= 4.0.0), libjson-glib-1.0-0 (>= 1.5.2)
+Breaks: phosh-osk-stub (<< 0.42~), phosh-plugins (<< 0.44~)
+Filename: ./libpms-1.0-0_0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2_arm64.deb
+Size: 47188
+MD5sum: ba851789daa544f26b9ff55634531e83
+SHA1: 2f6736ace0ad6c457064463d9c3d4b7913539262
+SHA256: 20edc0e53080ef73b38bb4d4386fdf11749a72b19bb56d43daa3eee743aaa03d
+Section: libs
+Priority: optional
+Homepage: https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/
+Description: Phosh and related settings for mobile - shared libraries
+ Mobile Settings allows to configure some advanced settings of the Phosh mobile
+ environment that would otherwise involve using the command line.
+ .
+ This package contains the shared library.
+
+Package: libpms-1.0-common
+Source: phosh-mobile-settings
+Version: 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2
+Architecture: arm64
+Maintainer: Guido Günther <agx@sigxcpu.org>
+Installed-Size: 846
+Breaks: phosh-mobile-settings (<< 0.54~)
+Replaces: phosh-mobile-settings (<< 0.54~)
+Filename: ./libpms-1.0-common_0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2_arm64.deb
+Size: 159620
+MD5sum: 8e02f95d97fa159e2a3f560a3d3e0f13
+SHA1: 1b595c43fa19b3334cb96461fbcf4a3543498279
+SHA256: 1274c2d1a87b719c51408071ebda8e3791c58e86a5c40cacd9d1c08de5b8471a
+Section: libs
+Priority: optional
+Homepage: https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/
+Description: Phosh and related settings for mobile - common files
+ Mobile Settings allows to configure some advanced settings of the Phosh mobile
+ environment that would otherwise involve using the command line.
+ .
+ This package contains the architecture independent files
+
+Package: linux-bootimage-4.9.191-samsung-r7
+Source: linux-android-samsung-r7
+Version: 0.0.0+git20260727114043.d91260c.droidian
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 112791
+Pre-Depends: flash-bootimage (>= 4)
+Depends: linux-image-4.9.191-samsung-r7 (= 0.0.0+git20260727114043.d91260c.droidian)
+Filename: ./linux-bootimage-4.9.191-samsung-r7_0.0.0+git20260727114043.d91260c.droidian_arm64.deb
+Size: 48928256
+MD5sum: d501af2756433ab4b41c6d9a6115d179
+SHA1: a3280b7abe21f0ceab9e35eab4a1c51d7407d3cd
+SHA256: 313fc7cf13f4544b10f53980d8e483a2660b00c7940c57e76918e0b5794d950f
+Section: kernel
+Priority: optional
+Description: Linux kernel for Samsung Galaxy Note10 Lite - Android Boot Image
+ This package contains the Linux kernel for the Samsung Galaxy Note10 Lite device.
+ .
+ Note: This package ships an Android Boot Image bundled with Halium's
+ initramfs.
+X-Droidian-Vcs-Revision: d91260cb50ed756bbeb7605b9a369dcfc572d37f
+X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
+
+Package: linux-bootimage-samsung-r7
+Source: linux-android-samsung-r7
+Version: 0.0.0+git20260727114043.d91260c.droidian
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 7
+Depends: linux-bootimage-4.9.191-samsung-r7 (= 0.0.0+git20260727114043.d91260c.droidian)
+Filename: ./linux-bootimage-samsung-r7_0.0.0+git20260727114043.d91260c.droidian_arm64.deb
+Size: 1376
+MD5sum: e5180353bcf9831aa3cbf59b5a4113aa
+SHA1: 11b3cbddb3bc54f522d79c0a09433dfcfc550836
+SHA256: b614f239b3ba332bfa03cd9281ce64249bea9d2ac388204804136ce20301fc5a
+Section: kernel
+Priority: optional
+Description: Linux kernel for Samsung Galaxy Note10 Lite - Android Boot Image  (latest)
+ This package depends to the latest kernel bootimage available for the Samsung Galaxy Note10 Lite.
+X-Droidian-Vcs-Revision: d91260cb50ed756bbeb7605b9a369dcfc572d37f
+X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
+
+Package: linux-headers-4.9.191-samsung-r7
+Source: linux-android-samsung-r7
+Version: 0.0.0+git20260727114043.d91260c.droidian
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 55379
+Depends: linux-image-4.9.191-samsung-r7 (= 0.0.0+git20260727114043.d91260c.droidian)
+Filename: ./linux-headers-4.9.191-samsung-r7_0.0.0+git20260727114043.d91260c.droidian_arm64.deb
+Size: 8307752
+MD5sum: 6468621cc9c6f8deee7d7bf4ac183f47
+SHA1: fa05665ec2d1c060027fa87163295d52578f3072
+SHA256: 18af0df9f110350e06e636bce3d4b99ab399d191ae63c3931e81f7e9285b80ef
+Section: kernel
+Priority: optional
+Description: Linux kernel for Samsung Galaxy Note10 Lite - Headers
+ This package contains the Linux kernel headers for the Samsung Galaxy Note10 Lite device.
+X-Droidian-Vcs-Revision: d91260cb50ed756bbeb7605b9a369dcfc572d37f
+X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
+
+Package: linux-headers-samsung-r7
+Source: linux-android-samsung-r7
+Version: 0.0.0+git20260727114043.d91260c.droidian
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 7
+Depends: linux-headers-4.9.191-samsung-r7 (= 0.0.0+git20260727114043.d91260c.droidian)
+Filename: ./linux-headers-samsung-r7_0.0.0+git20260727114043.d91260c.droidian_arm64.deb
+Size: 1360
+MD5sum: 954b8e5b17e12292f564608e9a5908fb
+SHA1: ded44c86d1a599535ca5802c482c4cc25ca67641
+SHA256: 5a5f3470aff677353446408fa57dbb520d70d6d37634e15ed0930ff471d860ba
+Section: kernel
+Priority: optional
+Description: Linux kernel for Samsung Galaxy Note10 Lite - Headers (latest)
+ This package depends to the latest kernel headers available for the Samsung Galaxy Note10 Lite.
+X-Droidian-Vcs-Revision: d91260cb50ed756bbeb7605b9a369dcfc572d37f
+X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
+
+Package: linux-image-4.9.191-samsung-r7
+Source: linux-android-samsung-r7
+Version: 0.0.0+git20260727114043.d91260c.droidian
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 39251
+Filename: ./linux-image-4.9.191-samsung-r7_0.0.0+git20260727114043.d91260c.droidian_arm64.deb
+Size: 9344416
+MD5sum: 07d89ee82671b78a228fb1ff2a32b273
+SHA1: 5c258a713dd2d2bf927aad659174e4ffe692d33d
+SHA256: ffe7d3ee61ef803bfbb4f8e7189ecaf5e6462058bac724bd9c2756c6425c6907
+Section: kernel
+Priority: optional
+Description: Linux kernel for Samsung Galaxy Note10 Lite
+ This package contains the Linux kernel for the Samsung Galaxy Note10 Lite device.
+ .
+ Note: This package only ships the kernel image and modules, you should probably
+ look at the linux-bootimage-4.9.191-samsung-r7 package for a bootimage suitable
+ for Android boot loaders.
+X-Droidian-Vcs-Revision: d91260cb50ed756bbeb7605b9a369dcfc572d37f
+X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
+
+Package: linux-image-samsung-r7
+Source: linux-android-samsung-r7
+Version: 0.0.0+git20260727114043.d91260c.droidian
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 7
+Depends: linux-image-4.9.191-samsung-r7 (= 0.0.0+git20260727114043.d91260c.droidian)
+Filename: ./linux-image-samsung-r7_0.0.0+git20260727114043.d91260c.droidian_arm64.deb
+Size: 1356
+MD5sum: 4f58c4b0ea4c2def9e07182be22022b6
+SHA1: 6bdcacf6f4c19d771ed4bc0c4be8aa0cebf98c88
+SHA256: b3f59a049d9fbdd60d7bfd910dee819a8a2b7810dab4db592413f98a416513ab
+Section: kernel
+Priority: optional
+Description: Linux kernel for Samsung Galaxy Note10 Lite (latest)
+ This package depends to the latest kernel image available for the Samsung Galaxy Note10 Lite.
+X-Droidian-Vcs-Revision: d91260cb50ed756bbeb7605b9a369dcfc572d37f
+X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
+
+Package: phosh
+Version: 0.55.0+r7clock1
+Architecture: arm64
+Maintainer: Guido Günther <agx@sigxcpu.org>
+Installed-Size: 3932
+Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.39), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libdroid-0-1 (>= 0.2.0), libecal-2.0-3 (>= 3.33.4), libedataserver-1.2-27t64 (>= 3.25.90), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libical3t64 (>= 3.0.0), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), fonts-lato, gnome-shell-common (>= 49), gsettings-desktop-schemas (>= 49), libcap2-bin, libqrcodegen1, phoc (>= 0.47.0), phosh-common (= 0.55.0+r7clock1)
+Recommends: feedbackd (>= 0.5.0), fonts-adwaita, gnome-session-bin (>= 49), gnome-session-common, gnome-settings-daemon (>= 49), iio-sensor-proxy, librsvg2-common, network-manager-config-connectivity-debian, kbd, phosh-mobile-tweaks, phosh-plugins, slurp, phosh-osk-stevia
+Breaks: gnome-control-center (<< 42), gnome-settings-daemon (<< 49), libgtk-3-0 (<< 3.24.30), xdg-desktop-portal-phosh (<< 0.44~)
+Provides: notification-daemon, polkit-1-auth-agent
+Filename: ./phosh_0.55.0+r7clock1_arm64.deb
+Size: 820272
+MD5sum: 835e02680517503ec06fced6e1f831b1
+SHA1: bd72d2a0bd51217d7d9e3fea070e957a06ac6629
+SHA256: 2d9cca70e647ff6d430ab67dc5b85408e8e54727e3d833105fb52934a2ea2593
+Section: x11
+Priority: optional
+Homepage: https://phosh.mobi/
+Description: Pure Wayland shell for mobile devices
+ Phosh is a graphical shell for Wayland compositors speaking the layer-surface
+ protocol and aimed at mobile devices like smart phones and tablets using touch
+ based inputs and small screens.
+ .
+ It's part of the Phosh Mobile Environment based on GNOME/GTK. For the full
+ stack see the phosh-full and phosh-core metapackages.
+
+Package: phosh-common
+Source: phosh
+Version: 0.55.0+r7clock1
+Architecture: all
+Maintainer: Guido Günther <agx@sigxcpu.org>
+Installed-Size: 131
+Depends: dconf-gsettings-backend | gsettings-backend
+Conflicts: phosh (<< 0.45~rc1-3~)
+Filename: ./phosh-common_0.55.0+r7clock1_all.deb
+Size: 96156
+MD5sum: 8e94ec5ebff0a543c50e9346698d1f83
+SHA1: 7911f9127f8a34830229b7e1f6d782a0730a1375
+SHA256: 5b861ceef539a534881ccca7892b946e73d1c215be62983a8f9356307258c9bf
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://phosh.mobi/
+Description: Pure Wayland shell for mobile devices - Common files
+ Phosh is a graphical shell for Wayland compositors speaking the layer-surface
+ protocol and aimed at mobile devices like smart phones and tablets using touch
+ based inputs and small screens.
+ .
+ This package contains arch-independent files needed by phosh and libphosh.
+
+Package: phosh-mobile-settings
+Version: 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2
+Architecture: arm64
+Maintainer: Guido Günther <agx@sigxcpu.org>
+Installed-Size: 887
+Depends: feedbackd (>= 0.8.0~), libpms-1.0-0 (>= 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2), phoc (>= 0.34.0~), phosh (>= 0.40.0~), phosh-osk-stevia (>= 0.54~), xdg-desktop-portal-phosh (>= 0.46~), dconf-gsettings-backend | gsettings-backend, libaccountsservice0 (>= 23.13.9), libadwaita-1-0 (>= 1.7~alpha), libc6 (>= 2.34), libcellbroadcast-0.0-0 (>= 0.0.0~20250610), libfeedback-0.0-0 (>= 0.7.0), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgsound0t64 (>= 1.0.1), libgtk-4-1 (>= 4.17.1), libpango-1.0-0 (>= 1.14.0), libpolkit-gobject-1-0 (>= 0.99), libportal-gtk4-1 (>= 0.5), libportal1 (>= 0.5), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsensors5 (>= 1:3.5.0), libwayland-client0 (>= 1.20.0), libyaml-0-2
+Breaks: phosh-osk-stub (<< 0.42~), phosh-plugins (<< 0.44~)
+Filename: ./phosh-mobile-settings_0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2_arm64.deb
+Size: 226324
+MD5sum: c6bf653f9deda515ec7db7aac7b1e62e
+SHA1: 7f0177e28aa592ad4436930b78d603500159d086
+SHA256: 4304ac506f02bb3e8a946e19191a26b778262041833396b161d18420e434ffc0
+Section: x11
+Priority: optional
+Homepage: https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/
+Description: Phosh and related settings for mobile
+ Mobile Settings allows to configure some advanced settings of the Phosh mobile
+ environment that would otherwise involve using the command line.
+
+Package: phosh-plugins
+Source: phosh
+Version: 0.55.0
+Architecture: arm64
+Maintainer: Guido Günther <agx@sigxcpu.org>
+Installed-Size: 1808
+Depends: dconf-gsettings-backend | gsettings-backend, libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.17), libcairo2 (>= 1.14.0), libevdocument3-4t64 (>= 3.5.2), libevview3-3t64 (>= 3.0.2), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgtk-3-0t64 (>= 3.19.12), libgtk-4-1 (>= 4.12.0), libhandy-1-0 (>= 1.1.90), libnm0 (>= 1.0.0), libqrcodegen1 (>= 1.2.1), gsettings-desktop-schemas, phoc (>= 0.13.1), phosh (= 0.55.0)
+Breaks: phosh-mobile-settings (<< 0.44~)
+Filename: ./phosh-plugins_0.55.0_arm64.deb
+Size: 215860
+MD5sum: 655b2c22b9e24da95e6ca439010dfe89
+SHA1: e6e43e1e38d499484a1c14f1add806e5c36cc3ae
+SHA256: d5aece417b22d5ee786c35e49a5a5c15f140447917c6e2a29329eb9985508c8d
+Section: x11
+Priority: optional
+Homepage: https://phosh.mobi/
+Description: Pure Wayland shell for mobile devices - Plugins
+ Phosh is a graphical shell for Wayland compositors speaking the layer-surface
+ protocol and aimed at mobile devices like smart phones and tablets using touch
+ based inputs and small screens.
+ .
+ This package contains additional plugins.
+
