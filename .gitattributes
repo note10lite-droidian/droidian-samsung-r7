@@ -1,2 +1,10 @@
-*.deb filter=lfs diff=lfs merge=lfs -text
+# Package files are stored as ordinary git objects, not Git LFS.
+#
+# Upstream droidian tracks *.deb through LFS. That does not work for a public
+# community fork on a free GitHub account: the LFS bandwidth quota is 1 GB per
+# month, every clone pulls ~66 MB of packages, and once the quota is gone
+# cloning fails for everyone until it resets.
+#
+# The largest package here is ~47 MB, comfortably under GitHub's 100 MB
+# per-file limit, so plain git objects work and clone bandwidth is unmetered.
 *.deb !text !filter !merge !diff
