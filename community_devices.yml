@@ -12,3 +12,41 @@ samsung_r7:
   packages:
     - adaptation-samsung-r7
     - adaptation-samsung-r7-configs
+    - linux-image-samsung-r7
+    - linux-bootimage-samsung-r7
+
+    # --- Chosen on the device, after testing the alternatives ---
+    # If these are not in the image they are lost on a full wipe.
+
+    # Browser. Chromium was the best option for a while and Epiphany (WebKit)
+    # performed worse than both, eventually breaking outright. Firefox turned
+    # out to be by far the most stable of the three here (decided 2026-07-25)
+    # and is the default.
+    #
+    # Note: browser video is software-decoded whichever one you pick. The
+    # hardware decoder (droidvdec) exists but no browser can reach it across
+    # libhybris - that is a Halium-wide limit, not a Firefox one.
+    - firefox
+
+    # File manager. portfolio-filemanager (the Phosh default) did not work,
+    # and nemo runs but is not adaptive and its Preferences window hangs.
+    # Nautilus is adaptive and works.
+    - nautilus
+
+    # WAYDROID IS DELIBERATELY ABSENT. Enabling it is the user's decision,
+    # made from Phosh Settings; the image does not preinstall it. What the
+    # image does carry is everything that makes Waydroid *work* once enabled:
+    #   - kernel: anbox-binder / anbox-hwbinder / anbox-vndbinder in
+    #     CONFIG_ANDROID_BINDER_DEVICES
+    #   - kernel: the mali_kbase_context.c PID-namespace fix - without it the
+    #     Waydroid window stays BLANK and Android never finishes booting
+    #   - kernel: CONFIG_BRIDGE + BRIDGE_NETFILTER + NETFILTER_XT_TARGET_CHECKSUM
+    #   - sparse: etc/udev/rules.d/70-binder.rules (anbox-* nodes at 0666)
+    #
+    # nftables is deliberately not pulled in either: waydroid depends on
+    # iptables, not nftables. On the device nftables is disabled and inactive,
+    # and NAT works through iptables MASQUERADE.
+
+    # Diagnostic tooling (gst-launch-1.0), used while debugging the camera.
+    # Not required in a production image; kept for the development build.
+    - gstreamer1.0-tools
