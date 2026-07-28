@@ -1,0 +1,15 @@
+# The local internal repository (file:///var/lib/droidian-internal-repository)
+# holds this port's patched packages.
+#
+# The Droidian rolling repository is pinned at priority 1002. Whenever a
+# competing package (phosh, for example) exists there at a higher version, apt
+# picks THAT one and our patched .deb never reaches the image - the "apt/ trap".
+# A version bump is not enough to win.
+#
+# Pinning the internal repository at 1100 (> 1002, and > 1000, which also allows
+# a forced downgrade) makes it win unconditionally.
+#
+# An empty "origin" matches a local file:// repository.
+Package: *
+Pin: origin ""
+Pin-Priority: 1100
