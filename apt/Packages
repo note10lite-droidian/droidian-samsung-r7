@@ -1,36 +1,36 @@
 Package: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
 Installed-Size: 9
-Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm)
-Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm_arm64.deb
-Size: 2216
-MD5sum: f1ee39b8aa362078a8ee76eeff9fd719
-SHA1: c32e3d158de18604ba5fc57eb1aaf2cc4837d801
-SHA256: d1ed20fcd4c1297bb1b81f917d562e5932368c707a4b69dcc70eec5e313c7100
+Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm)
+Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm_arm64.deb
+Size: 2280
+MD5sum: 1985605137e4c4c8294348706d174b16
+SHA1: 58c192b9ef3346f5801df0bbc176e559dcd6974c
+SHA256: f1c555e378fa883d6309d91e6d97786d2364740a5c9153139b04a12aa566f0fc
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - metapackage
-X-Droidian-Vcs-Revision: c4c06d0fe5641ad08752294d51502863552085a7
-X-Droidian-Vcs-Url: https://github.com/droidian-devices/adaptation-samsung-r7.git
+X-Droidian-Vcs-Revision: c349ebc2844caeafe8af0044735fa8758bae02b6
+X-Droidian-Vcs-Url: https://github.com/note10lite-droidian/adaptation-samsung-r7.git
 
 Package: adaptation-samsung-r7-configs
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
-Installed-Size: 31
-Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm_arm64.deb
-Size: 4064
-MD5sum: ae3022cb7dd1b346f47805f97bd6c698
-SHA1: 5e81ea30b23482b7f50dfdfc02aaa843886bffac
-SHA256: d9eab01609cd17daf15c5559c4ce3634f87401496983e7d3f44e4d568b45d3b4
+Installed-Size: 107
+Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm_arm64.deb
+Size: 11844
+MD5sum: 3c833c49a046ac9900f2b5643af49e98
+SHA1: ee0cb693f47be99619dd2f2b2d6df9ad5e3c2542
+SHA256: 07507ff2a130f4c067e0c7dbfd7ddda56091684388fece2393d5e73df2532ebe
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - adaptation configurations
-X-Droidian-Vcs-Revision: c4c06d0fe5641ad08752294d51502863552085a7
-X-Droidian-Vcs-Url: https://github.com/droidian-devices/adaptation-samsung-r7.git
+X-Droidian-Vcs-Revision: c349ebc2844caeafe8af0044735fa8758bae02b6
+X-Droidian-Vcs-Url: https://github.com/note10lite-droidian/adaptation-samsung-r7.git
 
 Package: droidian-camera
 Version: 16+z1.1+git20240608103441.a0b51cd.next.production+r7rot8
@@ -54,16 +54,16 @@ Description: This package contains Droidian's default camera app.
 
 Package: libphosh-0.45-0
 Source: phosh
-Version: 0.55.0+r7clock1
+Version: 0.55.0+r7clock2
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
 Installed-Size: 2309
 Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.39), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libdroid-0-1 (>= 0.2.0), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), phosh-common (>= 0.45.0)
-Filename: ./libphosh-0.45-0_0.55.0+r7clock1_arm64.deb
-Size: 574068
-MD5sum: a88cf26a82954936746317602e1fcfdc
-SHA1: 2fcb3cd92950603a5eaaa01f1cc8260e181685a4
-SHA256: 86253d20ac31a0ecef4d674bfe64013cd826b593da8e1b1fcd7222e316df0edc
+Filename: ./libphosh-0.45-0_0.55.0+r7clock2_arm64.deb
+Size: 573680
+MD5sum: 6c3b977d60de6b2103ebfff65fbc5f6d
+SHA1: 8518e74abf22ea7c00004653079eb31d00a08a47
+SHA256: a2e1d766ae5aa032a3b5f8f8ded340835addb108cdac2f5a92c1be5977a07d8c
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -241,19 +241,19 @@ X-Droidian-Vcs-Revision: 7e1f1844b32d6e9bc8a86fb62ef3366213ca216f
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
 
 Package: phosh
-Version: 0.55.0+r7clock1
+Version: 0.55.0+r7clock2
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
 Installed-Size: 3932
-Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.39), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libdroid-0-1 (>= 0.2.0), libecal-2.0-3 (>= 3.33.4), libedataserver-1.2-27t64 (>= 3.25.90), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libical3t64 (>= 3.0.0), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), fonts-lato, gnome-shell-common (>= 49), gsettings-desktop-schemas (>= 49), libcap2-bin, libqrcodegen1, phoc (>= 0.47.0), phosh-common (= 0.55.0+r7clock1)
+Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.39), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libdroid-0-1 (>= 0.2.0), libecal-2.0-3 (>= 3.33.4), libedataserver-1.2-27t64 (>= 3.25.90), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libical3t64 (>= 3.0.0), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), fonts-lato, gnome-shell-common (>= 49), gsettings-desktop-schemas (>= 49), libcap2-bin, libqrcodegen1, phoc (>= 0.47.0), phosh-common (= 0.55.0+r7clock2)
 Recommends: feedbackd (>= 0.5.0), fonts-adwaita, gnome-session-bin (>= 49), gnome-session-common, gnome-settings-daemon (>= 49), iio-sensor-proxy, librsvg2-common, network-manager-config-connectivity-debian, kbd, phosh-mobile-tweaks, phosh-plugins, slurp, phosh-osk-stevia
 Breaks: gnome-control-center (<< 42), gnome-settings-daemon (<< 49), libgtk-3-0 (<< 3.24.30), xdg-desktop-portal-phosh (<< 0.44~)
 Provides: notification-daemon, polkit-1-auth-agent
-Filename: ./phosh_0.55.0+r7clock1_arm64.deb
-Size: 820272
-MD5sum: 835e02680517503ec06fced6e1f831b1
-SHA1: bd72d2a0bd51217d7d9e3fea070e957a06ac6629
-SHA256: 2d9cca70e647ff6d430ab67dc5b85408e8e54727e3d833105fb52934a2ea2593
+Filename: ./phosh_0.55.0+r7clock2_arm64.deb
+Size: 820588
+MD5sum: 1feae0cf2cb8bcce55838ceadf8f4575
+SHA1: 4212f526dde7d2b39bbf52728bc7bca5de5b94fd
+SHA256: da19f9539c7379e65fb8e476043320cc2afefb402e7ba6a713a2a1f26003bfe9
 Section: x11
 Priority: optional
 Homepage: https://phosh.mobi/
@@ -267,17 +267,17 @@ Description: Pure Wayland shell for mobile devices
 
 Package: phosh-common
 Source: phosh
-Version: 0.55.0+r7clock1
+Version: 0.55.0+r7clock2
 Architecture: all
 Maintainer: Guido Günther <agx@sigxcpu.org>
 Installed-Size: 131
 Depends: dconf-gsettings-backend | gsettings-backend
 Conflicts: phosh (<< 0.45~rc1-3~)
-Filename: ./phosh-common_0.55.0+r7clock1_all.deb
-Size: 96156
-MD5sum: 8e94ec5ebff0a543c50e9346698d1f83
-SHA1: 7911f9127f8a34830229b7e1f6d782a0730a1375
-SHA256: 5b861ceef539a534881ccca7892b946e73d1c215be62983a8f9356307258c9bf
+Filename: ./phosh-common_0.55.0+r7clock2_all.deb
+Size: 96164
+MD5sum: 92ba54a279e9c802f3c2c5e4eb7ea40f
+SHA1: ae87f6e386ecb8d16e1ec2bb291408aac833fc14
+SHA256: 17431cc7a9665fdaf91bb111378e76d16a34cd6df9479130f1b17e3f2c4d60f0
 Section: x11
 Priority: optional
 Multi-Arch: foreign
@@ -310,17 +310,17 @@ Description: Phosh and related settings for mobile
 
 Package: phosh-plugins
 Source: phosh
-Version: 0.55.0
+Version: 0.55.0+r7clock2
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
 Installed-Size: 1808
-Depends: dconf-gsettings-backend | gsettings-backend, libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.17), libcairo2 (>= 1.14.0), libevdocument3-4t64 (>= 3.5.2), libevview3-3t64 (>= 3.0.2), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgtk-3-0t64 (>= 3.19.12), libgtk-4-1 (>= 4.12.0), libhandy-1-0 (>= 1.1.90), libnm0 (>= 1.0.0), libqrcodegen1 (>= 1.2.1), gsettings-desktop-schemas, phoc (>= 0.13.1), phosh (= 0.55.0)
+Depends: dconf-gsettings-backend | gsettings-backend, libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.17), libcairo2 (>= 1.14.0), libevdocument3-4t64 (>= 3.5.2), libevview3-3t64 (>= 3.0.2), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgtk-3-0t64 (>= 3.19.12), libgtk-4-1 (>= 4.12.0), libhandy-1-0 (>= 1.1.90), libnm0 (>= 1.0.0), libqrcodegen1 (>= 1.2.1), gsettings-desktop-schemas, phoc (>= 0.13.1), phosh (= 0.55.0+r7clock2)
 Breaks: phosh-mobile-settings (<< 0.44~)
-Filename: ./phosh-plugins_0.55.0_arm64.deb
-Size: 215860
-MD5sum: 655b2c22b9e24da95e6ca439010dfe89
-SHA1: e6e43e1e38d499484a1c14f1add806e5c36cc3ae
-SHA256: d5aece417b22d5ee786c35e49a5a5c15f140447917c6e2a29329eb9985508c8d
+Filename: ./phosh-plugins_0.55.0+r7clock2_arm64.deb
+Size: 215800
+MD5sum: 9edc726e94628ec8aab6bb1264e78f89
+SHA1: fa4879f868b5f738c06f281e0cfd6b497dd7aa14
+SHA256: b44fcfcce704be77a796d2de0596c9215791db3d7cfcf3f97000b516b603651a
 Section: x11
 Priority: optional
 Homepage: https://phosh.mobi/
