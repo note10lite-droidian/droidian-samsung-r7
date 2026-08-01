@@ -1,36 +1,33 @@
 Package: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
 Installed-Size: 9
-Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm)
-Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm_arm64.deb
-Size: 2280
-MD5sum: 1985605137e4c4c8294348706d174b16
-SHA1: 58c192b9ef3346f5801df0bbc176e559dcd6974c
-SHA256: f1c555e378fa883d6309d91e6d97786d2364740a5c9153139b04a12aa566f0fc
+Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1)
+Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1_arm64.deb
+Size: 2506
+MD5sum: 02af2247d05377afd207f02911289f27
+SHA1: 9eeec779f1e84b87be3e0c199a9e42fecb7db6d0
+SHA256: fd0d808e2db3abc203224f4bff6d967c705c1f0641ad731c8379cd610ee566ee
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - metapackage
-X-Droidian-Vcs-Revision: c349ebc2844caeafe8af0044735fa8758bae02b6
-X-Droidian-Vcs-Url: https://github.com/note10lite-droidian/adaptation-samsung-r7.git
 
 Package: adaptation-samsung-r7-configs
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
-Installed-Size: 107
-Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm_arm64.deb
-Size: 11844
-MD5sum: 3c833c49a046ac9900f2b5643af49e98
-SHA1: ee0cb693f47be99619dd2f2b2d6df9ad5e3c2542
-SHA256: 07507ff2a130f4c067e0c7dbfd7ddda56091684388fece2393d5e73df2532ebe
+Installed-Size: 132
+Depends: dconf-gsettings-backend | gsettings-backend, init-system-helpers (>= 1.52), python3-gi, python3-evdev
+Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1_arm64.deb
+Size: 17230
+MD5sum: 8cb45dbf1b8936514dfb3931b66fb53d
+SHA1: 7f971ab17f3ff1d1f6cee2d18cb0cba4e33f9360
+SHA256: 37b56a3320894ddc2130146a259e0e4cb7672980cc826c958c45b467b80c248e
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - adaptation configurations
-X-Droidian-Vcs-Revision: c349ebc2844caeafe8af0044735fa8758bae02b6
-X-Droidian-Vcs-Url: https://github.com/note10lite-droidian/adaptation-samsung-r7.git
 
 Package: droidian-camera
 Version: 16+z1.1+git20240608103441.a0b51cd.next.production+r7rot8
