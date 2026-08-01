@@ -1,10 +1,10 @@
 name: droidian rootfs-builder
 
 on:
+  # Manual, controlled release builds only. Nightly (schedule) and
+  # build-on-push triggers were removed deliberately: images are cut by hand
+  # via "Run workflow", never automatically.
   workflow_dispatch:
-  push:
-  schedule:
-    - cron: "59 23 * * *"
 
 jobs:
   once:
