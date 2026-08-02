@@ -40,121 +40,27 @@ Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.12.0), libgs
 Conflicts: pinhole
 Provides: pinhole
 Filename: ./droidian-camera_16+z1.1+git20240608103441.a0b51cd.next.production+r7rot8_arm64.deb
-Size: 171592
-MD5sum: 50a3532cc0e66b5277e9770300194f6e
-SHA1: 02eaa2e96867fe42ac72c2d3b007aa34a614add0
-SHA256: 20ce79ce0b74479d78fabe9a078371d226005620e36dce92d4b9986d59b4fbc6
+Size: 171572
+MD5sum: 36ddeea7e7addc244a58980f3dc8038e
+SHA1: e4c854d57de4b572a8caa4386621e430a36c5311
+SHA256: fcb7f102418e3c80b28d8f0e6b07715799a69d2c34811dd86b943bb9dceb990b
 Section: libs
 Priority: optional
 Multi-Arch: foreign
 Description: This package contains Droidian's default camera app.
 
-Package: gstreamer1.0-plugins-bad
-Source: gst-plugins-bad1.0
-Version: 1.28.5-2
-Architecture: arm64
-Maintainer: Maintainers of GStreamer packages <gst-plugins-bad1.0@packages.debian.org>
-Installed-Size: 15873
-Depends: gstreamer1.0-plugins-base (>= 1.28.0), gstreamer1.0-plugins-good (>= 1.28.0), libgstreamer-plugins-bad1.0-0 (= 1.28.5-2), libaom3 (>= 3.2.0), libass9 (>= 1:0.13.6), libavtp0 (>= 0.2.0), libbs2b0 (>= 3.1.0+dfsg), libbz2-1.0, libc6 (>= 2.38), libcairo2 (>= 1.6.0), libchromaprint1 (>= 1.3.2), libcurl4-gnutls (>= 8.20.0-3~), libdc1394-25 (>= 2.2.6), libdca0 (>= 0.0.5), libde265-0 (>= 0.9), libdrm2 (>= 2.4.108), libdvdnav4 (>= 4.1.3), libdvdread8t64 (>= 4.1.3), libfaad2 (>= 2.7), libflite1 (>= 1.4-release-9~), libfluidsynth3 (>= 2.2.0), libfreeaptx0 (>= 0.1.1), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.83.0), libgme0 (>= 0.6.0), libgsm1 (>= 1.0.18), libgstreamer-gl1.0-0 (>= 1.28.0), libgstreamer-plugins-base1.0-0 (>= 1.28.0), libgstreamer1.0-0 (>= 1.28.3), libgtk-3-0t64 (>= 3.15.0), libgudev-1.0-0 (>= 146), libimath-3-1-29t64 (>= 3.1.12), libjson-glib-1.0-0 (>= 1.5.2), liblc3-1 (>= 1.0.1), liblcms2-2 (>= 2.7), libldacbt-enc2 (>= 2.0.2), liblilv-0-0 (>= 0.22), liblrdf0 (>= 0.4.0-1.2), libltc11 (>= 1.2.0), libmjpegutils-2.2-0 (>= 1:2.2.1), libmodplug1 (>= 1:0.8.8.5), libmpcdec6 (>= 1:0.1~r435), libmpeg2encpp-2.2-0 (>= 1:2.2.1), libmplex2-2.2-0 (>= 1:2.2.1), libneon27t64, libnettle8t64 (>= 3), libonnxruntime1.23 (>= 1.23.1), libopenal1 (>= 1:1.14), libopenexr-3-4-33 (>= 3.4.6+ds), libopenh264-8 (>= 2.6.0+dfsg), libopenjp2-7 (>= 2.2.0), libopenmpt0t64 (>= 0.5.10), libopenni2-0 (>= 2.2.0.33+dfsg), libopus0 (>= 1.1), liborc-0.4-0t64 (>= 1:0.4.34), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.22), libqrencode4 (>= 3.2.0), librsvg2-2 (>= 2.36.2), librtmp1 (>= 2.3), libsbc1 (>= 2.1), libsndfile1 (>= 1.0.20), libsoundtouch1 (>= 2.0.0), libspandsp2t64 (>= 0.0.6~pre18), libsrt1.5-gnutls (>= 1.5.6), libsrtp2-1 (>= 2.0.0+20170516), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), libsvtav1enc4 (>= 4.0.1), libtensorflow-lite2.14.1 (>= 2.14.1), libusb-1.0-0 (>= 2:1.0.8), libva2 (>= 2.2.0), libvo-aacenc0 (>= 0.1.3), libvo-amrwbenc0 (>= 0.1.3), libwayland-client0 (>= 1.20.0), libwebp7 (>= 1.5.0), libwebpmux3 (>= 1.5.0), libwebrtc-audio-processing-1-3 (>= 1.3), libwildmidi2 (>= 0.4.2), libx11-6, libx265-216 (>= 4.2), libxml2-16 (>= 2.14.1), libzbar0t64 (>= 0.10), libzvbi0t64 (>= 0.2.35), libzxing4 (>= 3.0)
-Suggests: frei0r-plugins
-Conflicts: gstreamer1.0-plugins-bad-faad (<< 1.11.91-1ubuntu1), gstreamer1.0-plugins-bad-videoparsers (<< 1.11.91-1ubuntu1)
-Breaks: gstreamer1.0-plugins-base (<< 0.11.94), gstreamer1.0-plugins-good (<< 1.1.2)
-Replaces: gstreamer1.0-plugins-bad-faad (<< 1.11.91-1ubuntu1), gstreamer1.0-plugins-bad-videoparsers (<< 1.11.91-1ubuntu1), gstreamer1.0-plugins-base (<< 0.11.94), gstreamer1.0-plugins-good (<< 1.1.2)
-Provides: gstreamer1.0-audiosink, gstreamer1.0-audiosource, gstreamer1.0-plugins-bad-faad, gstreamer1.0-plugins-bad-videoparsers, gstreamer1.0-videosink, gstreamer1.0-videosource, gstreamer1.0-visualization
-Filename: ./gstreamer1.0-plugins-bad_1.28.5-2_arm64.deb
-Size: 2819176
-MD5sum: 8847f624dbada4540151131323e1cc69
-SHA1: 0cc1af56552df1a7e04bcaf77d5b2c4af1c649ce
-SHA256: bc9d19f9ca015b5cf70b20d7adfcf50327fd13704c7f167a224163f78a7365d9
-Section: libs
-Priority: optional
-Multi-Arch: same
-Homepage: https://gstreamer.freedesktop.org
-Description: GStreamer plugins from the "bad" set
- GStreamer is a streaming media framework, based on graphs of filters
- which operate on media data.  Applications using this library can do
- anything from real-time sound processing to playing videos, and just
- about anything else media-related.  Its plugin-based architecture means
- that new data types or processing capabilities can be added simply by
- installing new plug-ins.
- .
- GStreamer Bad Plug-ins is a set of plug-ins that aren't up to par compared
- to the rest. They might be close to being good quality, but they're missing
- something - be it a good code review, some documentation, a set of tests, a
- real live maintainer, or some actual wide use.
-Gstreamer-Decoders: application/dash+xml; application/mxf; application/vnd.ms-sstr+xml; application/x-hls; audio/midi; audio/mpeg, mpegversion=(int)4, stream-format=(string){ raw, adts }; audio/mpeg, mpegversion=(int)2; audio/ms-gsm; audio/riff-midi; audio/x-adpcm, layout=(string){ microsoft, dvi }; audio/x-aiff; audio/x-ay; audio/x-dts; audio/x-gbs; audio/x-gsm; audio/x-gym; audio/x-hes; audio/x-ircam; audio/x-it; audio/x-kss; audio/x-midi-event; audio/x-mod; audio/x-musepack, streamversion=(int){ 7, 8 }; audio/x-nist; audio/x-nsf; audio/x-paris; audio/x-private1-dts; audio/x-rf64; audio/x-s3m; audio/x-sap; audio/x-sbc, parsed=(boolean)true; audio/x-sds; audio/x-siren, dct-length=(int)320; audio/x-spc; audio/x-stm; audio/x-svx; audio/x-vgm; audio/x-voc; audio/x-w64; audio/x-xi; audio/x-xm; image/jp2; image/jpeg; image/png; image/svg; image/svg+xml; image/webp; image/x-exr; image/x-j2c; image/x-jpc; image/x-jpc-striped; image/x-portable-anymap; image/x-portable-bitmap; image/x-portable-graymap; image/x-portable-pixmap; video/mpeg, mpegversion=(int){ 1, 2 }, systemstream=(boolean){ true, false }; video/mpeg, mpegversion=(int)4, systemstream=(boolean)false; video/mpegts, systemstream=(boolean)true; video/x-av1; video/x-cdxa; video/x-divx, divxversion=(int)[ 4, 5 ]; video/x-h263, variant=(string)itu; video/x-h264; video/x-h265; video/x-h266; video/x-ivf; video/x-vmnc, version=(int)1; video/x-vp8, codec-alpha=(boolean)true; video/x-vp9
-Gstreamer-Elements: a2dpsink, accurip, adpcmdec, adpcmenc, aesdec, aesenc, aiffmux, aiffparse, alphacombine, asfmux, asfparse, assrender, atscmux, audiobuffersplit, audiochannelmix, audiolatency, audiomixmatrix, audioparse, audiosegmentclip, autoconvert, autodeinterlace, autovideoconvert, autovideoflip, av12json, av1dec, av1enc, av1parse, avdtpsink, avdtpsrc, avtpaafdepay, avtpaafpay, avtpcrfcheck, avtpcrfsync, avtpcvfdepay, avtpcvfpay, avtprvfdepay, avtprvfpay, avtpsink, avtpsrc, avwait, bayer2rgb, bpmdetect, bs2b, bulge, burn, bz2dec, bz2enc, camerabin, cccombiner, ccconverter, ccextractor, cea608mux, checksumsink, chopmydata, chromahold, chromaprint, chromium, circle, classifiertensordecoder, clockselect, codecalphademux, coloreffects, combdetect, compare, curlfilesink, curlftpsink, curlhttpsink, curlhttpsrc, curlsftpsink, curlsmtpsink, dashdemux, dashsink, dc1394src, debugqroverlay, debugspy, decklinkaudiosink, decklinkaudiosrc, decklinkvideosink, decklinkvideosrc, diffuse, dilate, diracparse, dodge, dtlsdec, dtlsenc, dtlssrtpdec, dtlssrtpdemux, dtlssrtpenc, dtmfdetect, dtsdec, dvbbasebin, dvbsrc, dvbsubenc, dvbsuboverlay, dvdspu, errorignore, exclusion, faad, faceoverlay, fakeaudiosink, fakevideosink, fbdevsink, festival, fieldanalysis, fisheye, flitetestsrc, fluiddec, fpsdisplaysink, freeverb, gaussianblur, gdpdepay, gdppay, gmedec, gsmdec, gsmenc, gtkwaylandsink, h263parse, h2642json, h264ccextractor, h264ccinserter, h264parse, h264timestamper, h2652json, h265ccextractor, h265ccinserter, h265parse, h265timestamper, h266parse, hlsdemux, hlssink, hlssink2, id3mux, insertbin, interaudiosink, interaudiosrc, interlace, intersubsink, intersubsrc, intervideosink, intervideosrc, ioutracker, ipcpipelinesink, ipcpipelinesrc, ipcslavepipeline, irtspparse, ivfparse, ivtc, jifmux, jp2kdecimator, jpeg2000parse, jpegparse, kaleidoscope, kmssink, ladspa-amp-so-amp-mono, ladspa-amp-so-amp-stereo, ladspa-delay-so-delay-5s, ladspa-filter-so-hpf, ladspa-filter-so-lpf, ladspa-sine-so-sine-faaa, ladspa-sine-so-sine-faac, ladspa-sine-so-sine-fcaa, ladspasrc-noise-so-noise-white, ladspasrc-sine-so-sine-fcac, lc3dec, lc3enc, lcms, ldacenc, libde265dec, line21decoder, line21encoder, marble, midiparse, mirror, modplug, mpeg2enc, mpeg4videoparse, mpegpsdemux, mpegpsmux, mpegtsmux, mpegvideoparse, mplex, msesrc, mssdemux, musepackdec, mxfdemux, mxfmux, neonhttpsrc, netsim, objectdetectionoverlay, onnxinference, openalsink, openalsrc, openaptxdec, openaptxenc, openexrdec, openh264dec, openh264enc, openjpegdec, openjpegenc, openmptdec, openni2src, opusparse, pcapparse, perspective, pinch, pitch, pngparse, pnmdec, pnmenc, proxysink, proxysrc, qroverlay, removesilence, rfbsrc, rgb2bayer, ristrtpdeext, ristrtpext, ristrtxreceive, ristrtxsend, ristsink, ristsrc, rotate, roundrobin, rsndvdbin, rsvgdec, rsvgoverlay, rtmp2sink, rtmp2src, rtmpsink, rtmpsrc, rtpasfpay, rtponvifparse, rtponviftimestamp, rtpsink, rtpsrc, sbcdec, sbcenc, scenechange, sctpdec, sctpenc, sdpdemux, sdpsrc, segmentationoverlay, sfdec, shmsink, shmsrc, simplevideomark, simplevideomarkdetect, sirendec, sirenenc, smooth, solarize, spacescope, spanplc, spectrascope, speed, sphere, square, srtclientsink, srtclientsrc, srtenc, srtpdec, srtpenc, srtserversink, srtserversrc, srtsink, srtsrc, ssdobjectdetector, ssdtensordec, stretch, svtav1enc, switchbin, synaescope, teletextdec, tensordecodebin, testsrcbin, tfliteinference, timecodestamper, tonegeneratesrc, transcodebin, tsdemux, tsparse, ttmlparse, ttmlrender, tunnel, twirl, ultralightfacedetectortensordec, unixfdsink, unixfdsrc, uritranscodebin, uvch264mjpgdemux, uvch264src, uvcsink, vc1parse, videoanalyse, videocodectestsink, videodiff, videoframe-audiolevel, videoparse, videosegmentclip, viewfinderbin, vmncdec, voaacenc, voamrwbenc, vp82json, vp8alphadecodebin, vp9alphadecodebin, vp9parse, watchdog, waterripple, wavescope, waylandsink, webpdec, webpenc, webrtcbin, webrtcdsp, webrtcechoprobe, webvttenc, wildmididec, wrappercamerabinsrc, x265enc, yolosegv8tensordec, yolov8tensordec, zbar, zebrastripe, zxing
-Gstreamer-Encoders: application/mxf; application/x-bzip; application/x-dtls; application/x-gdp; application/x-rtp, media=(string){ audio, video, application }, encoding-name=(string)X-ASF-PF; application/x-sctp; application/x-subtitle; application/x-subtitle-vtt; audio/AMR-WB; audio/aptx; audio/aptx-hd; audio/mpeg, mpegversion=(int)4, stream-format=(string){ adts, raw }, base-profile=(string)lc; audio/x-adpcm, layout=(string)dvi; audio/x-aiff; audio/x-gsm; audio/x-lc3, frame-bytes=(int)[ 20, 400 ], frame-duration-us=(int){ 10000, 7500 }, framed=(boolean)true; audio/x-ldac, channel-mode=(string){ mono, dual, stereo }; audio/x-sbc, channel-mode=(string){ mono, dual, stereo, joint }, blocks=(int){ 4, 8, 12, 16 }, subbands=(int){ 4, 8 }, allocation-method=(string){ snr, loudness }, bitpool=(int)[ 2, 64 ]; audio/x-siren, dct-length=(int)320; image/jp2; image/webp; image/x-j2c, num-components=(int)[ 1, 4 ], sampling=(string){ RGB, BGR, RGBA, BGRA, YCbCr-4:4:4, YCbCr-4:2:2, YCbCr-4:2:0, YCbCr-4:1:1, YCbCr-4:1:0, GRAYSCALE, YCbCrA-4:4:4:4 }, colorspace=(string){ sRGB, sYUV, GRAY }; image/x-jpc, num-components=(int)[ 1, 4 ], num-stripes=(int)[ 1, 2147483647 ], alignment=(string){ frame, stripe }, sampling=(string){ RGB, BGR, RGBA, BGRA, YCbCr-4:4:4, YCbCr-4:2:2, YCbCr-4:2:0, YCbCr-4:1:1, YCbCr-4:1:0, GRAYSCALE, YCbCrA-4:4:4:4 }, colorspace=(string){ sRGB, sYUV, GRAY }; image/x-jpc-striped, num-components=(int)[ 1, 4 ], sampling=(string){ RGB, BGR, RGBA, BGRA, YCbCr-4:4:4, YCbCr-4:2:2, YCbCr-4:2:0, YCbCr-4:1:1, YCbCr-4:1:0, GRAYSCALE, YCbCrA-4:4:4:4 }, colorspace=(string){ sRGB, sYUV, GRAY }, num-stripes=(int)[ 2, 2147483647 ], stripe-height=(int)[ 1, 2147483647 ]; image/x-portable-anymap; image/x-portable-bitmap; image/x-portable-graymap; image/x-portable-pixmap; video/mpeg, systemstream=(boolean)false, mpegversion=(int){ 1, 2 }; video/mpeg, systemstream=(boolean)true; video/mpegts, systemstream=(boolean)true, packetsize=(int){ 192, 188 }; video/x-av1, stream-format=(string)obu-stream, alignment=(string)tu; video/x-h264, stream-format=(string)byte-stream, alignment=(string)au, profile=(string){ constrained-baseline, baseline, main, constrained-high, high }; video/x-h265, stream-format=(string)byte-stream, alignment=(string)au, profile=(string){ main, main-still-picture, main-intra, main-444, main-444-intra, main-444-still-picture, main-10, main-10-intra, main-422-10, main-422-10-intra, main-444-10, main-444-10-intra, main-12, main-12-intra, main-422-12, main-422-12-intra, main-444-12, main-444-12-intra }; video/x-ms-asf, parsed=(boolean)true
-Gstreamer-Uri-Sinks: rtmfp, rtmp, rtmpe, rtmps, rtmpt, rtmpte, rtmpts, rtp, srt
-Gstreamer-Uri-Sources: dvb, dvd, http, https, mse, rfb, rist, rtmfp, rtmp, rtmpe, rtmps, rtmpt, rtmpte, rtmpts, rtp, sdp, srt, testbin
-Gstreamer-Version: 1.28
-
-Package: libgstreamer-plugins-bad1.0-0
-Source: gst-plugins-bad1.0
-Version: 1.28.5-2
-Architecture: arm64
-Maintainer: Maintainers of GStreamer packages <gst-plugins-bad1.0@packages.debian.org>
-Installed-Size: 3714
-Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.98), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.81.1), libgstreamer-gl1.0-0 (>= 1.28.0), libgstreamer-plugins-base1.0-0 (>= 1.28.0), libgstreamer1.0-0 (>= 1.28.3), libnice10 (>= 0.1.21), libstdc++6 (>= 14), libva-drm2 (>= 1.8), libva2 (>= 2.21.0), libwayland-client0 (>= 1.23.0)
-Conflicts: pitivi (<< 0.9999)
-Filename: ./libgstreamer-plugins-bad1.0-0_1.28.5-2_arm64.deb
-Size: 865952
-MD5sum: 3ed7b2ca2c610372b753dfad6f83a0bf
-SHA1: ec09d0fdc4bc73a1d81da567638b1f85a71fcaf8
-SHA256: c4c282a1974d0d8dd356e0a870a9d52ff413cde40ddaaa321ca916127c9399bb
-Section: libs
-Priority: optional
-Multi-Arch: same
-Homepage: https://gstreamer.freedesktop.org
-Description: GStreamer libraries from the "bad" set
- GStreamer is a streaming media framework, based on graphs of filters
- which operate on media data.  Applications using this library can do
- anything from real-time sound processing to playing videos, and just
- about anything else media-related.  Its plugin-based architecture means
- that new data types or processing capabilities can be added simply by
- installing new plug-ins.
- .
- GStreamer Bad Plug-ins is a set of plug-ins that aren't up to par compared
- to the rest. They might be close to being good quality, but they're missing
- something - be it a good code review, some documentation, a set of tests, a
- real live maintainer, or some actual wide use.
- .
- This package contains shared GStreamer libraries from the "bad" set. The API
- is not guaranteed to be stable.
-
-Package: libmtpserver1
-Source: mtp
-Version: 8+git20240802124857.2b0f798.next.production+r7boost1
-Architecture: arm64
-Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
-Installed-Size: 210
-Depends: libandroid-properties1 (>= 0.0.5.53), libc6 (>= 2.38), libgcc-s1 (>= 3.0), libgoogle-glog0v6t64 (>= 0.6.0), libstdc++6 (>= 5.2)
-Filename: ./libmtpserver1_8+git20240802124857.2b0f798.next.production+r7boost1_arm64.deb
-Size: 49096
-MD5sum: c05e0877659021453fc72e120c21cba6
-SHA1: bf7a227a397b9cd485f9a0128c0f7bf2b514013d
-SHA256: 9a72b3f3ece0c98fb80bb0c4a159d8288cff286119d301d4f07eb16689d729dd
-Section: libs
-Priority: optional
-Homepage: http://launchpad.net/mtp
-Description: Library for implementing MTP protocol servers - shared library
- Exposes phone storage over MTP.
- .
- This package contains the shared library for MTP.
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-
 Package: libphosh-0.45-0
 Source: phosh
-Version: 0.55.0+r7clock2
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 2309
-Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.39), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libdroid-0-1 (>= 0.2.0), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), phosh-common (>= 0.45.0)
-Filename: ./libphosh-0.45-0_0.55.0+r7clock2_arm64.deb
-Size: 573680
-MD5sum: 6c3b977d60de6b2103ebfff65fbc5f6d
-SHA1: 8518e74abf22ea7c00004653079eb31d00a08a47
-SHA256: a2e1d766ae5aa032a3b5f8f8ded340835addb108cdac2f5a92c1be5977a07d8c
+Installed-Size: 2259
+Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.38), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), phosh-common (>= 0.45.0)
+Filename: ./libphosh-0.45-0_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1_arm64.deb
+Size: 628688
+MD5sum: 39f9753c08e0eea5fc8c5c48234f30cc
+SHA1: 706666ab0f4c9c52a6792c585f57c5c727e70be1
+SHA256: 86cef752fe2ba18d933ab05ac4ae0f71209efaa43f42f9e6e97729a0f1965898
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -165,50 +71,6 @@ Description: Pure Wayland shell for mobile devices - binding shared library
  based inputs and small screens.
  .
  This package contains the shared library for language bindings.
-
-Package: libpms-1.0-0
-Source: phosh-mobile-settings
-Version: 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2
-Architecture: arm64
-Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 170
-Depends: libpms-1.0-common (>= 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2), phosh-osk-stevia (>= 0.53~), libadwaita-1-0 (>= 1.5), libc6 (>= 2.17), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.80.0), libgnome-desktop-4-2t64 (>= 3.33.4), libgtk-4-1 (>= 4.0.0), libjson-glib-1.0-0 (>= 1.5.2)
-Breaks: phosh-osk-stub (<< 0.42~), phosh-plugins (<< 0.44~)
-Filename: ./libpms-1.0-0_0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2_arm64.deb
-Size: 47188
-MD5sum: ba851789daa544f26b9ff55634531e83
-SHA1: 2f6736ace0ad6c457064463d9c3d4b7913539262
-SHA256: 20edc0e53080ef73b38bb4d4386fdf11749a72b19bb56d43daa3eee743aaa03d
-Section: libs
-Priority: optional
-Homepage: https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/
-Description: Phosh and related settings for mobile - shared libraries
- Mobile Settings allows to configure some advanced settings of the Phosh mobile
- environment that would otherwise involve using the command line.
- .
- This package contains the shared library.
-
-Package: libpms-1.0-common
-Source: phosh-mobile-settings
-Version: 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2
-Architecture: arm64
-Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 846
-Breaks: phosh-mobile-settings (<< 0.54~)
-Replaces: phosh-mobile-settings (<< 0.54~)
-Filename: ./libpms-1.0-common_0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2_arm64.deb
-Size: 159620
-MD5sum: 8e02f95d97fa159e2a3f560a3d3e0f13
-SHA1: 1b595c43fa19b3334cb96461fbcf4a3543498279
-SHA256: 1274c2d1a87b719c51408071ebda8e3791c58e86a5c40cacd9d1c08de5b8471a
-Section: libs
-Priority: optional
-Homepage: https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/
-Description: Phosh and related settings for mobile - common files
- Mobile Settings allows to configure some advanced settings of the Phosh mobile
- environment that would otherwise involve using the command line.
- .
- This package contains the architecture independent files
 
 Package: linux-bootimage-4.9.191-samsung-r7
 Source: linux-android-samsung-r7
@@ -331,41 +193,20 @@ Description: Linux kernel for Samsung Galaxy Note10 Lite (latest)
 X-Droidian-Vcs-Revision: 7e1f1844b32d6e9bc8a86fb62ef3366213ca216f
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
 
-Package: mtp-server
-Source: mtp
-Version: 8+git20240802124857.2b0f798.next.production+r7boost1
-Architecture: arm64
-Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
-Installed-Size: 368
-Depends: libandroid-properties1 (>= 0.0.5.53), libboost-filesystem1.90.0 (>= 1.90.0), libboost-thread1.90.0 (>= 1.90.0), libc6 (>= 2.38), libgcc-s1 (>= 3.0), libgoogle-glog0v6t64 (>= 0.6.0), libmtpserver1 (>= 8+git20240802124857.2b0f798.next.production+r7boost1), libstdc++6 (>= 14)
-Filename: ./mtp-server_8+git20240802124857.2b0f798.next.production+r7boost1_arm64.deb
-Size: 83476
-MD5sum: 48a489e95b89690091290395e28200d8
-SHA1: a5c9d8fa004185702e63a0b2108de90c5afd45dc
-SHA256: 9554750aa27095e0419eef9c746ead08ceb98b9658ab3a90b8e90889a916e719
-Section: utils
-Priority: optional
-Homepage: http://launchpad.net/mtp
-Description: Small server implementation of MTP.
- Exposes phone storage over MTP.
- .
- Contains a simple MTP server that exposes images, videos, and music.
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-
 Package: phosh
-Version: 0.55.0+r7clock2
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 3932
-Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.39), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libdroid-0-1 (>= 0.2.0), libecal-2.0-3 (>= 3.33.4), libedataserver-1.2-27t64 (>= 3.25.90), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libical3t64 (>= 3.0.0), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), fonts-lato, gnome-shell-common (>= 49), gsettings-desktop-schemas (>= 49), libcap2-bin, libqrcodegen1, phoc (>= 0.47.0), phosh-common (= 0.55.0+r7clock2)
-Recommends: feedbackd (>= 0.5.0), fonts-adwaita, gnome-session-bin (>= 49), gnome-session-common, gnome-settings-daemon (>= 49), iio-sensor-proxy, librsvg2-common, network-manager-config-connectivity-debian, kbd, phosh-mobile-tweaks, phosh-plugins, slurp, phosh-osk-stevia
-Breaks: gnome-control-center (<< 42), gnome-settings-daemon (<< 49), libgtk-3-0 (<< 3.24.30), xdg-desktop-portal-phosh (<< 0.44~)
+Installed-Size: 3639
+Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.38), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libecal-2.0-3 (>= 3.33.4), libedataserver-1.2-27t64 (>= 3.25.90), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libical3t64 (>= 3.0.0), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), fonts-lato, gnome-shell-common, gsettings-desktop-schemas (>= 47), libcap2-bin, phoc (>= 0.45.0), phosh-common (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1)
+Recommends: feedbackd (>= 0.5.0), fonts-cantarell, gnome-session-bin, gnome-session-common, gnome-settings-daemon, iio-sensor-proxy, librsvg2-common, network-manager-config-connectivity-debian, kbd, phosh-mobile-tweaks, phosh-plugins, slurp, squeekboard | phosh-osk-stub
+Breaks: gnome-calls (<< 42), gnome-control-center (<< 42), libgtk-3-0 (<< 3.24.30), xdg-desktop-portal-phosh (<< 0.44~)
 Provides: notification-daemon, polkit-1-auth-agent
-Filename: ./phosh_0.55.0+r7clock2_arm64.deb
-Size: 820588
-MD5sum: 1feae0cf2cb8bcce55838ceadf8f4575
-SHA1: 4212f526dde7d2b39bbf52728bc7bca5de5b94fd
-SHA256: da19f9539c7379e65fb8e476043320cc2afefb402e7ba6a713a2a1f26003bfe9
+Filename: ./phosh_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1_arm64.deb
+Size: 844160
+MD5sum: c7be45941edecf5b9f20457143118e80
+SHA1: fec520f08c3b6d07ec99a67928324eda0894d9ec
+SHA256: 1ec0855c230abdc14469031866ad0ba396154f26e637b46b19c8b214f795a21b
 Section: x11
 Priority: optional
 Homepage: https://phosh.mobi/
@@ -379,17 +220,17 @@ Description: Pure Wayland shell for mobile devices
 
 Package: phosh-common
 Source: phosh
-Version: 0.55.0+r7clock2
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1
 Architecture: all
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 131
+Installed-Size: 205
 Depends: dconf-gsettings-backend | gsettings-backend
 Conflicts: phosh (<< 0.45~rc1-3~)
-Filename: ./phosh-common_0.55.0+r7clock2_all.deb
-Size: 96164
-MD5sum: 92ba54a279e9c802f3c2c5e4eb7ea40f
-SHA1: ae87f6e386ecb8d16e1ec2bb291408aac833fc14
-SHA256: 17431cc7a9665fdaf91bb111378e76d16a34cd6df9479130f1b17e3f2c4d60f0
+Filename: ./phosh-common_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1_all.deb
+Size: 176388
+MD5sum: 6ab584bae19fee7bad7cdefff9533001
+SHA1: 51fd2c92db3abe4abc3e3b77862dea13bfd6d76b
+SHA256: f3a7cdcf136b26682660081a12c5882cc6e6a8f21abd79946025cdbd55edd84f
 Section: x11
 Priority: optional
 Multi-Arch: foreign
@@ -401,38 +242,19 @@ Description: Pure Wayland shell for mobile devices - Common files
  .
  This package contains arch-independent files needed by phosh and libphosh.
 
-Package: phosh-mobile-settings
-Version: 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2
-Architecture: arm64
-Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 887
-Depends: feedbackd (>= 0.8.0~), libpms-1.0-0 (>= 0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2), phoc (>= 0.34.0~), phosh (>= 0.40.0~), phosh-osk-stevia (>= 0.54~), xdg-desktop-portal-phosh (>= 0.46~), dconf-gsettings-backend | gsettings-backend, libaccountsservice0 (>= 23.13.9), libadwaita-1-0 (>= 1.7~alpha), libc6 (>= 2.34), libcellbroadcast-0.0-0 (>= 0.0.0~20250610), libfeedback-0.0-0 (>= 0.7.0), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgsound0t64 (>= 1.0.1), libgtk-4-1 (>= 4.17.1), libpango-1.0-0 (>= 1.14.0), libpolkit-gobject-1-0 (>= 0.99), libportal-gtk4-1 (>= 0.5), libportal1 (>= 0.5), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsensors5 (>= 1:3.5.0), libwayland-client0 (>= 1.20.0), libyaml-0-2
-Breaks: phosh-osk-stub (<< 0.42~), phosh-plugins (<< 0.44~)
-Filename: ./phosh-mobile-settings_0.55.0+git20260527214851.3fbecf5.next.phosh.0.55+r7spen2_arm64.deb
-Size: 226324
-MD5sum: c6bf653f9deda515ec7db7aac7b1e62e
-SHA1: 7f0177e28aa592ad4436930b78d603500159d086
-SHA256: 4304ac506f02bb3e8a946e19191a26b778262041833396b161d18420e434ffc0
-Section: x11
-Priority: optional
-Homepage: https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/
-Description: Phosh and related settings for mobile
- Mobile Settings allows to configure some advanced settings of the Phosh mobile
- environment that would otherwise involve using the command line.
-
 Package: phosh-plugins
 Source: phosh
-Version: 0.55.0+r7clock2
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 1808
-Depends: dconf-gsettings-backend | gsettings-backend, libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.17), libcairo2 (>= 1.14.0), libevdocument3-4t64 (>= 3.5.2), libevview3-3t64 (>= 3.0.2), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgtk-3-0t64 (>= 3.19.12), libgtk-4-1 (>= 4.12.0), libhandy-1-0 (>= 1.1.90), libnm0 (>= 1.0.0), libqrcodegen1 (>= 1.2.1), gsettings-desktop-schemas, phoc (>= 0.13.1), phosh (= 0.55.0+r7clock2)
+Installed-Size: 1515
+Depends: dconf-gsettings-backend | gsettings-backend, libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.17), libevdocument3-4t64 (>= 3.5.2), libevview3-3t64 (>= 3.0.2), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgtk-3-0t64 (>= 3.19.12), libgtk-4-1 (>= 4.9.2), libhandy-1-0 (>= 1.1.90), gsettings-desktop-schemas, phoc (>= 0.13.1), phosh (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1)
 Breaks: phosh-mobile-settings (<< 0.44~)
-Filename: ./phosh-plugins_0.55.0+r7clock2_arm64.deb
-Size: 215800
-MD5sum: 9edc726e94628ec8aab6bb1264e78f89
-SHA1: fa4879f868b5f738c06f281e0cfd6b497dd7aa14
-SHA256: b44fcfcce704be77a796d2de0596c9215791db3d7cfcf3f97000b516b603651a
+Filename: ./phosh-plugins_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1_arm64.deb
+Size: 256884
+MD5sum: 299106883750ca81ba821c5c1f7fcb99
+SHA1: 888abc4f3342a3362ad1db7f69c48a00d6446f3f
+SHA256: 2e9c8462641643bbab3e8cba8c9b7a4566033a3653cce7577e1bd865915c509e
 Section: x11
 Priority: optional
 Homepage: https://phosh.mobi/
