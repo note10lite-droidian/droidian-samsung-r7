@@ -49,6 +49,27 @@ Priority: optional
 Multi-Arch: foreign
 Description: This package contains Droidian's default camera app.
 
+Package: libmtpserver1
+Source: mtp
+Version: 8+git20240802124857.2b0f798.next.production+r7boost1
+Architecture: arm64
+Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
+Installed-Size: 210
+Depends: libandroid-properties1 (>= 0.0.5.53), libc6 (>= 2.38), libgcc-s1 (>= 3.0), libgoogle-glog0v6t64 (>= 0.6.0), libstdc++6 (>= 5.2)
+Filename: ./libmtpserver1_8+git20240802124857.2b0f798.next.production+r7boost1_arm64.deb
+Size: 49096
+MD5sum: c05e0877659021453fc72e120c21cba6
+SHA1: bf7a227a397b9cd485f9a0128c0f7bf2b514013d
+SHA256: 9a72b3f3ece0c98fb80bb0c4a159d8288cff286119d301d4f07eb16689d729dd
+Section: libs
+Priority: optional
+Homepage: http://launchpad.net/mtp
+Description: Library for implementing MTP protocol servers - shared library
+ Exposes phone storage over MTP.
+ .
+ This package contains the shared library for MTP.
+Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
+
 Package: libphosh-0.45-0
 Source: phosh
 Version: 0.55.0+r7clock2
@@ -236,6 +257,27 @@ Description: Linux kernel for Samsung Galaxy Note10 Lite (latest)
  This package depends to the latest kernel image available for the Samsung Galaxy Note10 Lite.
 X-Droidian-Vcs-Revision: 7e1f1844b32d6e9bc8a86fb62ef3366213ca216f
 X-Droidian-Vcs-Url: https://github.com/droidian-devices/linux-android-samsung-r7.git
+
+Package: mtp-server
+Source: mtp
+Version: 8+git20240802124857.2b0f798.next.production+r7boost1
+Architecture: arm64
+Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
+Installed-Size: 368
+Depends: libandroid-properties1 (>= 0.0.5.53), libboost-filesystem1.90.0 (>= 1.90.0), libboost-thread1.90.0 (>= 1.90.0), libc6 (>= 2.38), libgcc-s1 (>= 3.0), libgoogle-glog0v6t64 (>= 0.6.0), libmtpserver1 (>= 8+git20240802124857.2b0f798.next.production+r7boost1), libstdc++6 (>= 14)
+Filename: ./mtp-server_8+git20240802124857.2b0f798.next.production+r7boost1_arm64.deb
+Size: 83476
+MD5sum: 48a489e95b89690091290395e28200d8
+SHA1: a5c9d8fa004185702e63a0b2108de90c5afd45dc
+SHA256: 9554750aa27095e0419eef9c746ead08ceb98b9658ab3a90b8e90889a916e719
+Section: utils
+Priority: optional
+Homepage: http://launchpad.net/mtp
+Description: Small server implementation of MTP.
+ Exposes phone storage over MTP.
+ .
+ Contains a simple MTP server that exposes images, videos, and music.
+Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
 
 Package: phosh
 Version: 0.55.0+r7clock2
