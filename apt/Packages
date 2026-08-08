@@ -81,6 +81,127 @@ Priority: optional
 Multi-Arch: foreign
 Description: This package contains Droidian's default camera app.
 
+Package: libandroid-properties1
+Source: libhybris
+Version: 0.1.0+git20200424-5+r7cam1
+Architecture: arm64
+Maintainer: Halium Developers <admin@halium.org>
+Installed-Size: 98
+Depends: libc6 (>= 2.17), libhybris-common1 (>= 0.1.0+git20200424)
+Filename: ./libandroid-properties1_0.1.0+git20200424-5+r7cam1_arm64.deb
+Size: 8400
+MD5sum: 0379c8df9f5348087b93c31e0bb63f06
+SHA1: 48f97fef552b053d8c4828bea9e5adfb506514db
+SHA256: df362463b3a5168b4e1cc50f6e62a115d71ff9f6d77197720275d39d1244fc3c
+Section: libs
+Priority: optional
+Description: Library to provide access to get, set and list Android properties
+ Contains a library that provides access to get, set and list Android
+ properties, which can be used by any Ubuntu app that needs to probe
+ for properties (gps, modem, device specifics).
+
+Package: libhardware2
+Source: libhybris
+Version: 0.1.0+git20200424-5+r7cam1
+Architecture: arm64
+Maintainer: Halium Developers <admin@halium.org>
+Installed-Size: 97
+Depends: libhybris-common1 (>= 0.1.0+git20200424)
+Filename: ./libhardware2_0.1.0+git20200424-5+r7cam1_arm64.deb
+Size: 8004
+MD5sum: 531c6c21ec4448c2f9c3482b5a9b6fa2
+SHA1: 4ad3b0df27bba1381573b61fbc917e15fc2c9d3b
+SHA256: d0093917bd8bd25158509d884913b31d0a2a1788f6ad0ec9f46d2592a993e1b9
+Section: libs
+Priority: optional
+Description: Library to provide access to the Android libhardware HAL
+ Contains a library that provides access to the Android libhardware HAL,
+ which can be used to access a wide range of other HALs, such as audio,
+ power, gralloc, etc.
+ .
+ Hybris is a solution that allows the use of bionic-based HW adaptations in
+ glibc systems.
+
+Package: libhybris
+Version: 0.1.0+git20200424-5+r7cam1
+Architecture: arm64
+Maintainer: Halium Developers <admin@halium.org>
+Installed-Size: 2048
+Depends: libandroid-properties1 (= 0.1.0+git20200424-5+r7cam1), libhardware2 (>= 0.1.0+git20200424), libmedia1, libc6 (>= 2.38), libgbm1 (>= 7.11~1), libgcc-s1 (>= 3.0), libhybris-common1 (>= 0.1.0+git20200424), libstdc++6 (>= 11), libwayland-client0 (>= 1.20.0), libwayland-egl1 (>= 1.15.0), libwayland-server0 (>= 1.2.0)
+Filename: ./libhybris_0.1.0+git20200424-5+r7cam1_arm64.deb
+Size: 144604
+MD5sum: 24c1ea0be07fc2b660097da16d1873e8
+SHA1: 5d2a3883693246b6e7768b886352793b41f99c81
+SHA256: a502aa3e11ece92593d74736d9f46c826d36d2c91044d014398395d7e77ebbad
+Section: libs
+Priority: optional
+Description: Allows one to run bionic-based HW adaptations in glibc systems - libs
+ Hybris is a solution that allows the use of bionic-based HW adaptations in
+ glibc systems.
+
+Package: libhybris-common1
+Source: libhybris
+Version: 0.1.0+git20200424-5+r7cam1
+Architecture: arm64
+Maintainer: Halium Developers <admin@halium.org>
+Installed-Size: 1354
+Depends: libc6 (>> 2.41), libc6 (<< 2.42), libgcc-s1 (>= 4.2), libstdc++6 (>= 11)
+Filename: ./libhybris-common1_0.1.0+git20200424-5+r7cam1_arm64.deb
+Size: 259708
+MD5sum: b2798e54d5cc8ff4855c6286f32c9fac
+SHA1: 6b7b5cca2cbcf3359aa6673d265aca94b19259c4
+SHA256: 838004e49dc56bec76fd5bda68f7a9bfad2c3fe24f91f9a789e007fe91122698
+Section: libs
+Priority: optional
+Description: Common library that contains the Android linker and custom hooks
+ Contains a common library that contains the Android linker, used to
+ dynamically load and use symbols from Android based libraries.
+ .
+ Hybris is a solution that allows the use of bionic-based HW adaptations in
+ glibc systems.
+
+Package: libhybris-utils
+Source: libhybris
+Version: 0.1.0+git20200424-5+r7cam1
+Architecture: arm64
+Maintainer: Halium Developers <admin@halium.org>
+Installed-Size: 171
+Depends: libhybris (= 0.1.0+git20200424-5+r7cam1), libandroid-properties1 (>= 0.1.0+git20200424), libc6 (>= 2.34)
+Filename: ./libhybris-utils_0.1.0+git20200424-5+r7cam1_arm64.deb
+Size: 11200
+MD5sum: 4b50541b45f454026bb13f9e16340975
+SHA1: cd3513faa489286f411da3896cf80d65525158ce
+SHA256: 6b03bd6184808bd119b3600ddfc62954724b39fab78441081ef5c806ebbac0a8
+Section: utils
+Priority: optional
+Description: Utilities to help working with the Android HW abstraction layer
+ Contains utilities used to help working with Android HW abstraction layer.
+ .
+ Hybris is a solution that allows the use of bionic-based HW adaptations in
+ glibc systems.
+
+Package: libmedia1
+Source: libhybris
+Version: 0.1.0+git20200424-5+r7cam1
+Architecture: arm64
+Maintainer: Halium Developers <admin@halium.org>
+Installed-Size: 97
+Depends: libhybris-common1 (>= 0.1.0+git20200424)
+Filename: ./libmedia1_0.1.0+git20200424-5+r7cam1_arm64.deb
+Size: 16172
+MD5sum: fbde43f5272bcee4168cc703f990fe3a
+SHA1: f9649cd1dcf4508d1dd377659ccedc062cae54db
+SHA256: c4421425cf05dd9879eebf9bebfca1d2346c6be672efb98b977c1d8e1ac9d42c
+Section: libs
+Priority: optional
+Description: Library to provide access to the Android Media HAL
+ Contains a library that provides access to the Android Media HAL,
+ which abstract the access to the Android libstagefright based
+ decoders.
+ .
+ Hybris is a solution that allows the use of bionic-based HW adaptations in
+ glibc systems.
+
 Package: libphosh-0.45-0
 Source: phosh
 Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1
