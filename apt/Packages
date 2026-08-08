@@ -1,14 +1,14 @@
 Package: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
 Installed-Size: 13
-Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1), openssh-server
-Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1_arm64.deb
-Size: 6724
-MD5sum: 08a683489d70df4ecae778795200eb48
-SHA1: 8b4e11a7b68a90fc0c57da8ff52d8f01383775a5
-SHA256: 22387fdca405c4ee6a5d641cb00c3e88a0fcc325ead6554725fe5a3c9fe4eb40
+Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1), openssh-server
+Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1_arm64.deb
+Size: 7068
+MD5sum: e50e68b46c7626b0ca8f75f8a2e34365
+SHA1: e0fae1baf410341243563341c85976bb18280b9d
+SHA256: 9de8caecaabc9f1dfd167f014e1c359fdacc93deeb55cef849d416f906af8a98
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - metapackage
@@ -19,16 +19,16 @@ Description: Community adaptation for samsung-r7 - metapackage
 
 Package: adaptation-samsung-r7-configs
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
-Installed-Size: 189
+Installed-Size: 192
 Depends: dconf-gsettings-backend | gsettings-backend, init-system-helpers (>= 1.52), python3-gi, python3-evdev, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-gtk4layershell-1.0, libgtk4-layer-shell0, isc-dhcp-server, usbmuxd
-Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1_arm64.deb
-Size: 33392
-MD5sum: cec5aeaf26584e4a29f22aea6019ce52
-SHA1: b8ae3f3b0268d9500abac72511d7ec996cd4c7b5
-SHA256: 366903ff896d15b1d5ddadbfc2222cd4db81de6d3889e65c27e3c280447c4da1
+Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1_arm64.deb
+Size: 34012
+MD5sum: c9c0acbe2d03a8d74e4f1e37c2a9b8d5
+SHA1: 110c52073c2de5043f968953be27f3ae580d07db
+SHA256: 8876f8770b8e5f897b441ff0b13fb76c6789d5a7e5990368c5d637d1f982a708
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - adaptation configurations
@@ -47,16 +47,16 @@ Description: Community adaptation for samsung-r7 - adaptation configurations
 
 Package: adaptation-samsung-r7-desktop
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
 Installed-Size: 13
-Depends: adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1), wayfire, waybar, fuzzel, foot, wlr-randr, iio-sensor-proxy
-Filename: ./adaptation-samsung-r7-desktop_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1_arm64.deb
-Size: 7088
-MD5sum: a37a4f864423a1d692c5630be983d84b
-SHA1: 7cf28f5b3e233d0ce887aeece42adadfdf2f7373
-SHA256: 26adf0c31222b0e55f76310760bfa3dd553fee59cf3b0b203259df9bb57b9a23
+Depends: adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1), wayfire, waybar, fuzzel, foot, wlr-randr, iio-sensor-proxy
+Filename: ./adaptation-samsung-r7-desktop_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1_arm64.deb
+Size: 7428
+MD5sum: bf290da471527c3d4ae9cc61ae6aaceb
+SHA1: 9c63bfb86b03d1299f5f4315bcf1835dbffaa687
+SHA256: 49efcc1f8cee321db444eb0714019d0e572d3a5e12d0737dbfed8b6a3d564df1
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - desktop-shell (wayfire) mode
