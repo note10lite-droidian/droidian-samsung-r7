@@ -93,6 +93,29 @@ Priority: optional
 Multi-Arch: foreign
 Description: This package contains Droidian's default camera app.
 
+Package: flatpak-extension-gl-hybris
+Source: libhybris
+Version: 0.1.0+git20200424-5+r7cam1
+Architecture: arm64
+Maintainer: Halium Developers <admin@halium.org>
+Installed-Size: 3442
+Depends: libhybris (= 0.1.0+git20200424-5+r7cam1), libhybris-common1, libhardware2 (= 0.1.0+git20200424-5+r7cam1)
+Recommends: flatpak-hybris
+Filename: ./flatpak-extension-gl-hybris_0.1.0+git20200424-5+r7cam1_arm64.deb
+Size: 395676
+MD5sum: 83b85084ad3c52625bfece3b768d1265
+SHA1: b7fe29ff31a0aae9a0d82c3dda83d8cab71a6af8
+SHA256: 5d7d4c246619b36152f73fd4ea42a1dcb3b4a817e57cda0260d2a63b2cfc003b
+Section: libs
+Priority: optional
+Description: libhybris extension for the org.freedesktop.Platform.GL runtime
+ This package contains all of the libhybris libraries, shipped as an
+ extension of the org.freedesktop.Platform.GL.
+ .
+ This allows usage of libhybris inside flatpaks as well. Note that installing
+ this package won't enable the extension automatically.
+ Check the flatpak-hybris package for more details.
+
 Package: libandroid-properties1
 Source: libhybris
 Version: 0.1.0+git20200424-5+r7cam1
