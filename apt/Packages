@@ -216,16 +216,16 @@ Description: Library to provide access to the Android Media HAL
 
 Package: libphosh-0.45-0
 Source: phosh
-Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 2259
+Installed-Size: 2099
 Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.38), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), phosh-common (>= 0.45.0)
-Filename: ./libphosh-0.45-0_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1_arm64.deb
-Size: 628688
-MD5sum: 39f9753c08e0eea5fc8c5c48234f30cc
-SHA1: 706666ab0f4c9c52a6792c585f57c5c727e70be1
-SHA256: 86cef752fe2ba18d933ab05ac4ae0f71209efaa43f42f9e6e97729a0f1965898
+Filename: ./libphosh-0.45-0_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1_arm64.deb
+Size: 465176
+MD5sum: b9e03bd5a17e56f9b99467753cfdb94b
+SHA1: 577921f29e0c4296a0502c59dd05a147ae1e5373
+SHA256: 35fa2de02a4e265f064984ab3dde70aa18b4d5c65e8aea65713ac6be3483b07e
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -359,19 +359,19 @@ X-Droidian-Vcs-Revision: 84b53aef7346ca9037c756816b027f5ad34c7738
 X-Droidian-Vcs-Url: https://github.com/note10lite-droidian/linux-android-samsung-r7.git
 
 Package: phosh
-Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 3639
-Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.38), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libecal-2.0-3 (>= 3.33.4), libedataserver-1.2-27t64 (>= 3.25.90), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libical3t64 (>= 3.0.0), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), fonts-lato, gnome-shell-common, gsettings-desktop-schemas (>= 47), libcap2-bin, phoc (>= 0.45.0), phosh-common (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1)
+Installed-Size: 3479
+Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.38), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libecal-2.0-3 (>= 3.33.4), libedataserver-1.2-27t64 (>= 3.25.90), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libical3t64 (>= 3.0.0), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), fonts-lato, gnome-shell-common, gsettings-desktop-schemas (>= 47), libcap2-bin, phoc (>= 0.45.0), phosh-common (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1)
 Recommends: feedbackd (>= 0.5.0), fonts-cantarell, gnome-session-bin, gnome-session-common, gnome-settings-daemon, iio-sensor-proxy, librsvg2-common, network-manager-config-connectivity-debian, kbd, phosh-mobile-tweaks, phosh-plugins, slurp, squeekboard | phosh-osk-stub
 Breaks: gnome-calls (<< 42), gnome-control-center (<< 42), libgtk-3-0 (<< 3.24.30), xdg-desktop-portal-phosh (<< 0.44~)
 Provides: notification-daemon, polkit-1-auth-agent
-Filename: ./phosh_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1_arm64.deb
-Size: 844160
-MD5sum: c7be45941edecf5b9f20457143118e80
-SHA1: fec520f08c3b6d07ec99a67928324eda0894d9ec
-SHA256: 1ec0855c230abdc14469031866ad0ba396154f26e637b46b19c8b214f795a21b
+Filename: ./phosh_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1_arm64.deb
+Size: 679684
+MD5sum: 685186cdd1a3b5b603728faf240b1f51
+SHA1: 1800d1ef86d788935a6026d1df56e7d4552ed4dc
+SHA256: 31556adcabb4f6675be847f60a6a27af92eb14a3656c2492abee44da5f81f22b
 Section: x11
 Priority: optional
 Homepage: https://phosh.mobi/
@@ -385,17 +385,17 @@ Description: Pure Wayland shell for mobile devices
 
 Package: phosh-common
 Source: phosh
-Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1
 Architecture: all
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 205
+Installed-Size: 45
 Depends: dconf-gsettings-backend | gsettings-backend
 Conflicts: phosh (<< 0.45~rc1-3~)
-Filename: ./phosh-common_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1_all.deb
-Size: 176388
-MD5sum: 6ab584bae19fee7bad7cdefff9533001
-SHA1: 51fd2c92db3abe4abc3e3b77862dea13bfd6d76b
-SHA256: f3a7cdcf136b26682660081a12c5882cc6e6a8f21abd79946025cdbd55edd84f
+Filename: ./phosh-common_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1_all.deb
+Size: 11480
+MD5sum: 64fe3a56fc64c398a4509799980b62c7
+SHA1: 424ff95634b38538cbaaeeafac9cc93673215847
+SHA256: 46834d26a421107fa899ce34dc37fe673d473e1c4d81f99925d3b005d2f7901f
 Section: x11
 Priority: optional
 Multi-Arch: foreign
@@ -409,17 +409,17 @@ Description: Pure Wayland shell for mobile devices - Common files
 
 Package: phosh-plugins
 Source: phosh
-Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 1515
-Depends: dconf-gsettings-backend | gsettings-backend, libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.17), libevdocument3-4t64 (>= 3.5.2), libevview3-3t64 (>= 3.0.2), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgtk-3-0t64 (>= 3.19.12), libgtk-4-1 (>= 4.9.2), libhandy-1-0 (>= 1.1.90), gsettings-desktop-schemas, phoc (>= 0.13.1), phosh (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1)
+Installed-Size: 1355
+Depends: dconf-gsettings-backend | gsettings-backend, libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.17), libevdocument3-4t64 (>= 3.5.2), libevview3-3t64 (>= 3.0.2), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgtk-3-0t64 (>= 3.19.12), libgtk-4-1 (>= 4.9.2), libhandy-1-0 (>= 1.1.90), gsettings-desktop-schemas, phoc (>= 0.13.1), phosh (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1)
 Breaks: phosh-mobile-settings (<< 0.44~)
-Filename: ./phosh-plugins_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1_arm64.deb
-Size: 256884
-MD5sum: 299106883750ca81ba821c5c1f7fcb99
-SHA1: 888abc4f3342a3362ad1db7f69c48a00d6446f3f
-SHA256: 2e9c8462641643bbab3e8cba8c9b7a4566033a3653cce7577e1bd865915c509e
+Filename: ./phosh-plugins_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1_arm64.deb
+Size: 92476
+MD5sum: 66debf37719b8f5b97d5524bdf000405
+SHA1: bcef937de796a0cb12d3707b15a6ad52e8dd9933
+SHA256: ff30e1bc138f50c45d41371f8145c403a2e778127e5363515ed276e7a22d9dd7
 Section: x11
 Priority: optional
 Homepage: https://phosh.mobi/
