@@ -1,14 +1,14 @@
 Package: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh1
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh2
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
 Installed-Size: 14
-Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh1), openssh-server
-Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh1_arm64.deb
-Size: 8080
-MD5sum: 328e4cff4eb08157b35cb5e374c15741
-SHA1: bfedfe90f830fcbce57a48fdb7c871f3595dc12e
-SHA256: 6fb48ac5f806cdb2c73838cc9c047309ffc771e1e0301e82e3704805dc2fcfe8
+Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh2), openssh-server
+Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh2_arm64.deb
+Size: 8328
+MD5sum: 1c0320cf654b9ae27cc26b7bc2de9935
+SHA1: df1caa86d3b5ced9d83800807895d804d34dccfe
+SHA256: 68816ce52fea4e9f8af732631fbff78ea5e45048770250bef47fc6fb89b04a11
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - metapackage
@@ -19,16 +19,16 @@ Description: Community adaptation for samsung-r7 - metapackage
 
 Package: adaptation-samsung-r7-configs
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh1
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh2
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
-Installed-Size: 196
+Installed-Size: 194
 Depends: dconf-gsettings-backend | gsettings-backend, init-system-helpers (>= 1.52), python3-gi, python3-evdev, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-gtk4layershell-1.0, libgtk4-layer-shell0, isc-dhcp-server, usbmuxd
-Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh1_arm64.deb
-Size: 35904
-MD5sum: 5c00cb78c1c34be9c5cf6ff046b171a4
-SHA1: 9ccfc49f6b84c7449b2d6735c4d86bedec88bec2
-SHA256: 07ff7b63aca636cde912f04e7298cf2d132069f4a67406f56b8ee355f4118b99
+Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh2_arm64.deb
+Size: 35588
+MD5sum: 698323f9db47f456d5505672f8947fbd
+SHA1: 5763e7875db07984d062acd10ae8f1ae7c8204d7
+SHA256: 33b3e11a90591e08560752c683ca19dd4795f9c22716d5e87e801e42ad49a118
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - adaptation configurations
@@ -47,16 +47,16 @@ Description: Community adaptation for samsung-r7 - adaptation configurations
 
 Package: adaptation-samsung-r7-desktop
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh1
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh2
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
 Installed-Size: 14
-Depends: adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh1), wayfire, waybar, fuzzel, foot, wlr-randr, iio-sensor-proxy
-Filename: ./adaptation-samsung-r7-desktop_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh1_arm64.deb
-Size: 8440
-MD5sum: f515e7cf96542d0979654a00dbb4f993
-SHA1: 3d32e9b314f01cb9e27f4c958e35f6312f50efa6
-SHA256: 077ad942582cbd9bec2af06ee69483edef9ca6cebc394c54928194e5bf4183ee
+Depends: adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh2), wayfire, waybar, fuzzel, foot, wlr-randr, iio-sensor-proxy
+Filename: ./adaptation-samsung-r7-desktop_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1+r7vol1+r7log1+r7ssh2+r7phosh2_arm64.deb
+Size: 8684
+MD5sum: cd74dd1551b6d7112ba97943d81dedbf
+SHA1: e05ce44acb945ec3bb23717dab42ee6872f1c26d
+SHA256: cfd9a29a121288dd3e932b0b5e6f8f3294ddb49055929d41f593fc7c206e32f2
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - desktop-shell (wayfire) mode
@@ -239,16 +239,16 @@ Description: Library to provide access to the Android Media HAL
 
 Package: libphosh-0.45-0
 Source: phosh
-Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 2099
+Installed-Size: 2100
 Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.38), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), phosh-common (>= 0.45.0)
-Filename: ./libphosh-0.45-0_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1_arm64.deb
-Size: 465176
-MD5sum: b9e03bd5a17e56f9b99467753cfdb94b
-SHA1: 577921f29e0c4296a0502c59dd05a147ae1e5373
-SHA256: 35fa2de02a4e265f064984ab3dde70aa18b4d5c65e8aea65713ac6be3483b07e
+Filename: ./libphosh-0.45-0_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1_arm64.deb
+Size: 464420
+MD5sum: fe80ccc4cc1c0a6c69c9280363d9fc3e
+SHA1: b41f4d514a3e102c8caa1d2c0fd99bb404ad012d
+SHA256: a281868a325360e5b4577648e3196fdb3bbf57286c5fe2ce0628f277e1ec07b3
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -382,19 +382,19 @@ X-Droidian-Vcs-Revision: 4d5ed1b6acd66cf574cb8c4d7cab70076563d144
 X-Droidian-Vcs-Url: https://github.com/note10lite-droidian/linux-android-samsung-r7.git
 
 Package: phosh
-Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 3479
-Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.38), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libecal-2.0-3 (>= 3.33.4), libedataserver-1.2-27t64 (>= 3.25.90), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libical3t64 (>= 3.0.0), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), fonts-lato, gnome-shell-common, gsettings-desktop-schemas (>= 47), libcap2-bin, phoc (>= 0.45.0), phosh-common (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1)
+Installed-Size: 3481
+Depends: libappstream5 (>= 1.0.0), libc6 (>= 2.38), libcairo2 (>= 1.10.0), libcallaudio-0-1 (>= 0.0.5), libecal-2.0-3 (>= 3.33.4), libedataserver-1.2-27t64 (>= 3.25.90), libfeedback-0.0-0 (>= 0.7.0), libfribidi0 (>= 0.19.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgnome-bluetooth-3.0-13 (>= 42.3), libgnome-desktop-3-20t64 (>= 3.34.2), libgtk-3-0t64 (>= 3.21.5), libgudev-1.0-0 (>= 234), libhandy-1-0 (>= 1.1.90), libical3t64 (>= 3.0.0), libmm-glib0 (>= 1.24.0), libnm0 (>= 1.24.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.37.2), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.94), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.0.3), libsystemd0 (>= 213), libupower-glib3 (>= 0.99.14), libwayland-client0 (>= 1.20.0), fonts-lato, gnome-shell-common, gsettings-desktop-schemas (>= 47), libcap2-bin, phoc (>= 0.45.0), phosh-common (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1)
 Recommends: feedbackd (>= 0.5.0), fonts-cantarell, gnome-session-bin, gnome-session-common, gnome-settings-daemon, iio-sensor-proxy, librsvg2-common, network-manager-config-connectivity-debian, kbd, phosh-mobile-tweaks, phosh-plugins, slurp, squeekboard | phosh-osk-stub
 Breaks: gnome-calls (<< 42), gnome-control-center (<< 42), libgtk-3-0 (<< 3.24.30), xdg-desktop-portal-phosh (<< 0.44~)
 Provides: notification-daemon, polkit-1-auth-agent
-Filename: ./phosh_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1_arm64.deb
-Size: 679684
-MD5sum: 685186cdd1a3b5b603728faf240b1f51
-SHA1: 1800d1ef86d788935a6026d1df56e7d4552ed4dc
-SHA256: 31556adcabb4f6675be847f60a6a27af92eb14a3656c2492abee44da5f81f22b
+Filename: ./phosh_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1_arm64.deb
+Size: 680000
+MD5sum: 1c052657de1e86d70e765aaaf7e8894b
+SHA1: 6bc432f71c7d2e5be0d7538c41bb921a6cd2c30f
+SHA256: e77305dfe9b54e685e05fc8b76793b017956b03a4bea3815c95dfdb211d48859
 Section: x11
 Priority: optional
 Homepage: https://phosh.mobi/
@@ -408,17 +408,17 @@ Description: Pure Wayland shell for mobile devices
 
 Package: phosh-common
 Source: phosh
-Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1
 Architecture: all
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 45
+Installed-Size: 46
 Depends: dconf-gsettings-backend | gsettings-backend
 Conflicts: phosh (<< 0.45~rc1-3~)
-Filename: ./phosh-common_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1_all.deb
-Size: 11480
-MD5sum: 64fe3a56fc64c398a4509799980b62c7
-SHA1: 424ff95634b38538cbaaeeafac9cc93673215847
-SHA256: 46834d26a421107fa899ce34dc37fe673d473e1c4d81f99925d3b005d2f7901f
+Filename: ./phosh-common_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1_all.deb
+Size: 12064
+MD5sum: 28ae18858d01265dd97c6ac088daccf7
+SHA1: 6b54c318d0468d859eebe07d432c262ae221cf10
+SHA256: 8593c2e7b77b3d1400d985a6418fa6e374a41bb4a861e1c5b806cb73f99488ca
 Section: x11
 Priority: optional
 Multi-Arch: foreign
@@ -432,17 +432,17 @@ Description: Pure Wayland shell for mobile devices - Common files
 
 Package: phosh-plugins
 Source: phosh
-Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1
+Version: 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1
 Architecture: arm64
 Maintainer: Guido Günther <agx@sigxcpu.org>
-Installed-Size: 1355
-Depends: dconf-gsettings-backend | gsettings-backend, libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.17), libevdocument3-4t64 (>= 3.5.2), libevview3-3t64 (>= 3.0.2), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgtk-3-0t64 (>= 3.19.12), libgtk-4-1 (>= 4.9.2), libhandy-1-0 (>= 1.1.90), gsettings-desktop-schemas, phoc (>= 0.13.1), phosh (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1)
+Installed-Size: 1356
+Depends: dconf-gsettings-backend | gsettings-backend, libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.17), libevdocument3-4t64 (>= 3.5.2), libevview3-3t64 (>= 3.0.2), libglib2.0-0t64 (>= 2.83.0), libgmobile0 (>= 0.1.0), libgtk-3-0t64 (>= 3.19.12), libgtk-4-1 (>= 4.9.2), libhandy-1-0 (>= 1.1.90), gsettings-desktop-schemas, phoc (>= 0.13.1), phosh (= 0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1)
 Breaks: phosh-mobile-settings (<< 0.44~)
-Filename: ./phosh-plugins_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1_arm64.deb
-Size: 92476
-MD5sum: 66debf37719b8f5b97d5524bdf000405
-SHA1: bcef937de796a0cb12d3707b15a6ad52e8dd9933
-SHA256: ff30e1bc138f50c45d41371f8145c403a2e778127e5363515ed276e7a22d9dd7
+Filename: ./phosh-plugins_0.49.0+git20250824213429.cf38ab5.next.phosh.0.49+r7mon1+r7clock1+r7phosh1_arm64.deb
+Size: 93148
+MD5sum: 41bace96cfdd9b7c1f1107043e0e1e23
+SHA1: 4bdafd20f3315685a59a386bca5f1440c16365e3
+SHA256: 5de01a19efeb7dcfe3a03f94343f8f0adb1eacafe2e4f4dad81d2bbdfb3978b5
 Section: x11
 Priority: optional
 Homepage: https://phosh.mobi/
