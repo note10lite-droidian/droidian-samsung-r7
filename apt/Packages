@@ -1,14 +1,14 @@
 Package: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
 Installed-Size: 12
-Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1), openssh-server
-Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1_arm64.deb
-Size: 5412
-MD5sum: 69530f7a52be836bea3809a88c3f3fb2
-SHA1: dd63f76a05a29e66550e759aaeb5ebe6b9abf33a
-SHA256: b7c2f639f34f4c2a28c369b0880ba10c41890bae82dc40525ca786c1e451536d
+Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1), openssh-server
+Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1_arm64.deb
+Size: 6252
+MD5sum: b71065c1bc15d1c1a340de7cfdee68b4
+SHA1: fd87c01d2c8de8dca60af381e7114f80d30520bf
+SHA256: 44aecd55a60d79856534094afb35ddb65f9e9436e3b25dd1270375aa07f1ae63
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - metapackage
@@ -19,16 +19,16 @@ Description: Community adaptation for samsung-r7 - metapackage
 
 Package: adaptation-samsung-r7-configs
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
-Installed-Size: 179
-Depends: dconf-gsettings-backend | gsettings-backend, init-system-helpers (>= 1.52), python3-gi, python3-evdev, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-gtk4layershell-1.0, libgtk4-layer-shell0, isc-dhcp-server
-Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1_arm64.deb
-Size: 29876
-MD5sum: bc1a37a40974f882d89da3b5c8e77ea2
-SHA1: 33d6818c1d2dd69a8acee1cd01d46d3b4392bea5
-SHA256: cf9d555266673491b2e895a3e343b28ba1714713837db0a9f8e557d7c897b3a2
+Installed-Size: 181
+Depends: dconf-gsettings-backend | gsettings-backend, init-system-helpers (>= 1.52), python3-gi, python3-evdev, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-gtk4layershell-1.0, libgtk4-layer-shell0, isc-dhcp-server, usbmuxd
+Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1_arm64.deb
+Size: 31496
+MD5sum: 27486bffaab9c6a5dc7746a236755ea9
+SHA1: e2491bccbf7967a6ad19006f69313cf77567d375
+SHA256: 6c0f7ae8f852a6410459decfbff8fe98d017121b7367cc0538ea427c167a52d3
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - adaptation configurations
@@ -36,19 +36,27 @@ Description: Community adaptation for samsung-r7 - adaptation configurations
  mtp-configfs script to serve an IP over the USB RNDIS gadget (10.15.19.0/24,
  see /etc/hybris-usb/dhcpd.conf); the package's own generic
  isc-dhcp-server.service is unused and disabled in postinst.
+ .
+ Pulls usbmuxd so USB-connected iOS devices (e.g. tethering to an iPhone's
+ Personal Hotspot) get past the default PTP-only USB configuration: usbmuxd's
+ own udev rule (39-usbmuxd.rules) activates it automatically on Apple vendor
+ ID match, negotiates the device into its full configuration (PTP + Apple
+ Mobile Device + Apple USB Ethernet), and ipheth (built into the kernel)
+ binds the Ethernet interface from there - no adaptation-side wiring needed
+ beyond having the package installed.
 
 Package: adaptation-samsung-r7-desktop
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
 Installed-Size: 12
-Depends: adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1), wayfire, waybar, fuzzel, foot, wlr-randr, iio-sensor-proxy
-Filename: ./adaptation-samsung-r7-desktop_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1_arm64.deb
-Size: 5772
-MD5sum: 3f25eff99494be816eaaa3b00b568d7d
-SHA1: 0c03726de849770e7b82787a55a5d36095c069c8
-SHA256: 3ee202e46383ca4edd779e320cc4be414b9444cc5104cc594cabcb92cf37b779
+Depends: adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1), wayfire, waybar, fuzzel, foot, wlr-randr, iio-sensor-proxy
+Filename: ./adaptation-samsung-r7-desktop_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1+r7ios1_arm64.deb
+Size: 6612
+MD5sum: 4e91ee633d5b5e1bcd74526e1b886883
+SHA1: 86d6f4a8545b3a30f17ca17cd5acaf3b8f8f3603
+SHA256: 4717314cf549440b5151c8388294b03f83f1bf120f9f1e0cee473cb3abc2620a
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - desktop-shell (wayfire) mode
