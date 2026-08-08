@@ -1,50 +1,54 @@
 Package: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
-Installed-Size: 11
-Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2), openssh-server
-Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2_arm64.deb
-Size: 4880
-MD5sum: 652cdf08354678e954b8e0ab8f4bb119
-SHA1: 71fa1c10b02c8719063c072a911cc789fc263480
-SHA256: 87c67861208ad1e9d103c108eadd5d23407f9de1fbb717c42fd91961e459f887
+Installed-Size: 12
+Depends: adaptation-hybris-api33-phone, adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1), openssh-server
+Filename: ./adaptation-samsung-r7_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1_arm64.deb
+Size: 5412
+MD5sum: 69530f7a52be836bea3809a88c3f3fb2
+SHA1: dd63f76a05a29e66550e759aaeb5ebe6b9abf33a
+SHA256: b7c2f639f34f4c2a28c369b0880ba10c41890bae82dc40525ca786c1e451536d
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - metapackage
- Pulls openssh-server so a first flash always has a working SSH server. USB
- networking (RNDIS) is unreliable on this device and the base image ships no
- SSH server, which left a fresh install with no remote access at all; SSH over
- Wi-Fi is the dependable fallback.
+ Pulls openssh-server so a first flash always has a working SSH server. The
+ base image ships no SSH server at all, which left a fresh install with no
+ remote access; SSH over Wi-Fi is the dependable fallback regardless of USB
+ state.
 
 Package: adaptation-samsung-r7-configs
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
-Installed-Size: 172
-Depends: dconf-gsettings-backend | gsettings-backend, init-system-helpers (>= 1.52), python3-gi, python3-evdev, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-gtk4layershell-1.0, libgtk4-layer-shell0
-Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2_arm64.deb
-Size: 28588
-MD5sum: dc42eadb3ea3d73a8e015ba208ac9cdc
-SHA1: 6c7c3e4af76a8b06b06117f60e34bd2c6e58dbd3
-SHA256: be155973793ceb9495311c170320659186d06cab15a552abf5202635c5dfa956
+Installed-Size: 179
+Depends: dconf-gsettings-backend | gsettings-backend, init-system-helpers (>= 1.52), python3-gi, python3-evdev, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-gtk4layershell-1.0, libgtk4-layer-shell0, isc-dhcp-server
+Filename: ./adaptation-samsung-r7-configs_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1_arm64.deb
+Size: 29876
+MD5sum: bc1a37a40974f882d89da3b5c8e77ea2
+SHA1: 33d6818c1d2dd69a8acee1cd01d46d3b4392bea5
+SHA256: cf9d555266673491b2e895a3e343b28ba1714713837db0a9f8e557d7c897b3a2
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - adaptation configurations
+ Pulls isc-dhcp-server for its dhcpd binary, invoked directly by mtp-server's
+ mtp-configfs script to serve an IP over the USB RNDIS gadget (10.15.19.0/24,
+ see /etc/hybris-usb/dhcpd.conf); the package's own generic
+ isc-dhcp-server.service is unused and disabled in postinst.
 
 Package: adaptation-samsung-r7-desktop
 Source: adaptation-samsung-r7
-Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2
+Version: 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1
 Architecture: arm64
 Maintainer: Yunus Tan <yunus.tan@outlook.com.tr>
-Installed-Size: 11
-Depends: adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2), wayfire, waybar, fuzzel, foot, wlr-randr, iio-sensor-proxy
-Filename: ./adaptation-samsung-r7-desktop_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2_arm64.deb
-Size: 5220
-MD5sum: 84236cad30276270b7f38c9a9f7912aa
-SHA1: 54f8bc5895dc1a17ce32c6e3a0eeaa213af5fec0
-SHA256: 73857182ee1aa499877e8786655648aff6753ea8a04efa086118d437dba965ef
+Installed-Size: 12
+Depends: adaptation-samsung-r7-configs (= 0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1), wayfire, waybar, fuzzel, foot, wlr-randr, iio-sensor-proxy
+Filename: ./adaptation-samsung-r7-desktop_0.0.0+git20260720203123.c4c06d0.bookworm+git20260728092037.c349ebc.bookworm+r7spen1+r7dns1+r7setup3+r7ssh1+r7spenapp2+r7desktop2+r7usb1_arm64.deb
+Size: 5772
+MD5sum: 3f25eff99494be816eaaa3b00b568d7d
+SHA1: 0c03726de849770e7b82787a55a5d36095c069c8
+SHA256: 3ee202e46383ca4edd779e320cc4be414b9444cc5104cc594cabcb92cf37b779
 Section: metapackages
 Priority: optional
 Description: Community adaptation for samsung-r7 - desktop-shell (wayfire) mode
